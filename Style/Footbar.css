@@ -1,0 +1,84 @@
+#footbar h4{
+  text-align: center;
+}
+.email{
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+   text-align: center;
+}
+#footbar input{
+    text-align: center ;
+}
+#footbar button{
+    width: 280px;
+    height: 45px;
+    line-height: 40px;
+    background-color: #f7750c;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#footbar div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+   
+   
+}
+#footbar{
+    margin-top: 90px;
+}
+#details{
+    display: flex;
+}
+.left{
+    display: flex;
+    width: 50%;
+   flex-direction: column;
+  
+}
+.total{
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+
+
+.total div:nth-child(1){
+width: 50%;
+margin-left: 80px;
+
+
+}
+.total div:nth-child(2){
+    width: 50%;
+    margin-left: 80px;
+    
+    
+    }
+.total div:nth-child(2){
+    width: 50%;
+   align-items: flex-start;
+    
+    }
+.left div img{
+    margin-left: 30px;
+    width: 5%;
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.right img{
+  
+    width: 40%;
+   
+  
+}
+.lastend div {
+    display: flex;
+    flex-direction: column;
+
+}
+
