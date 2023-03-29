@@ -1,0 +1,188 @@
+
+#heading h1{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #2F4858;
+}
+#heading p{
+    color: #222;
+}
+hr{
+    width: 65%;
+}
+
+#heading{
+    margin: auto;
+    text-align: center;
+    width: 65%;
+}
+
+
+#fliterlabel{
+    width: 63%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    font-family: "Mr XL Modern", sans-serif;
+}
+
+#filter-sort{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.dropbtn {
+    background-color: #ED7745;
+    color: white;
+    padding: 4px 20px 4px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {    background-color: #2F4858;}
+
+
+  #mainSection{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    width: 65%;
+    margin: auto;
+  }
+  .cards{
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 15px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .cards h2{
+    color: #2F4858;
+  }
+  .cards p{
+    color: #494848;
+  }
+  .cards img{
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .cards span{
+    color: rgb(2, 119, 2);
+  }
+
+  .comparebtn{
+    visibility: hidden;
+    background: none;
+    color: #ED7745;
+    border: 3px solid #ED7745;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .optionbtn{
+    visibility: hidden;
+    background-color: #ED7745;
+    color: white;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    scale: 1.01;
+    visibility: visible;
+  }
+
+  .cards:hover .comparebtn{
+    visibility: visible;
+  }
+
+   .cards:hover .optionbtn{
+    visibility: visible;
+  }
+  .comparebtn:hover{
+    scale: 1.1;
+  }
+  .optionbtn:hover{
+    scale: 1.1;
+  }
+
+                                    /* lower section CSS */
+
+.slider{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    width: 65%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.lower-cards{
+    text-align: center;
+    border: 1px solid red;
+}
+.lower-cards img{
+    width: 100%;
+}
+
+.backwardbtn{
+    position: absolute;
+    top: 1370px;
+    left: 235px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(78, 78, 78);
+}
+.forwardbtn{
+    position: absolute;
+    top: 1370px;
+    right: 235px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(78, 78, 78);
+}
