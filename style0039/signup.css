@@ -1,0 +1,115 @@
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .bor {
+  border: 1px solid red;
+} */
+#si1Container {
+  width: 80%;
+  height: 590px;
+  margin: auto;
+  margin-top: 10px;
+}
+#si1Container > div:nth-child(1) {
+
+  width: 20%;
+  display: block;
+  margin: auto;
+  margin-left: 45%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;   
+ 
+}
+#si1Container > div:nth-child(2) {
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;        
+  height: 82%;
+}
+
+#si1form{
+height:100%;
+  text-align: center;
+  margin: 0% 9%;        
+  border: 1px solid black;
+}
+#si1form>p{
+  /* border: 1px solid teal; */
+  font-weight: 700;                
+  width: 25%;                        
+  margin: auto;
+  margin-top: -10px;
+  background-color: white;
+  margin-bottom: 4.5%;    
+  font-size: 17px;
+}
+
+#si2title,#si3firstName,#si4lastName,#si5Code,#si6MobNo,#si7EmailID,#si8Pass{
+  width: 15%;
+  height: 9%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+  padding-left: 2%;
+  background-color: rgb(247, 245, 245);
+  border: none;
+}
+/* #si2title>option:nth-last-child(4){
+  background-color: red;
+} */
+#si2title{
+  width:30%;
+  color: #868080;
+}
+#si5Code{
+color: #868080;
+}
+#si3firstName{width:40%;}
+#si4lastName,#si7EmailID,#si8Pass{width: 70%;padding-left: 20%;}
+#si6MobNo{width: 50%;}
+#si9SubBtn{
+  margin-top: 6%;
+  width: 100%;
+  border: 1px solid black;
+  height: 10%;
+  background-color: white;
+  font-weight: 600;
+}
+#si9SubBtn:hover{
+  background-color: #ED7745;
+  color: white;
+}
+
+#si12,#si13,#si11mustAgree{
+  border: 1px solid teal;
+  margin: 2% 0%;        
+}
+
+#si1Container table{
+  width: 70%;
+  margin: auto;    
+  font-size: 10px;    
+}
+#si1Container td{
+  padding:1px;
+  text-align: left;
+}
+#si1Container span{
+  text-decoration: underline;
+}
+#si14Whatsapp{
+   color:green
+}
+
+#si1Container h5{
+  text-align: end;
+   font-size: 14px;
+   font-weight: 500;
+   /* border: 1px solid teal; */
+}
+
+
+
