@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Pannel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/c96c8abcd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./admin css/admin.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+
+    <header>
+      <label for="check">
+        <i class="fa fa-bars" id="side-nav_btn"></i>
+      </label>
+      <div class="left-side">
+        <h3>Kumar Rohan <br />&nbsp;&nbsp;&nbsp;(Admin)</h3>
+      </div>
+      <a href="#"
+        ><i class="fa-solid fa-right-from-bracket fa-2xl"></i></a
+      >
+    </header>
+
+    <div class="side-nav">
+      <div class="logo">
+        <img src="./admin css/newlogo.png" alt="logo" class="image" />
+      </div>
+
+      <a href="#"
+        ><i class="fa fa-desktop"><span>Dashboard</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-couch"><span>Sofas</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-house"><span>Living Room</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-bed"><span>Bedroom</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-utensils"><span>Dining</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-box"><span>Storage</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-sharp fa-regular fa-pen-to-square"><span>Study</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-lightbulb"><span>Lighting</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-users"><span>Users</span></i></a
+      >
+      <a href="#"
+        ><i class="fa-solid fa-truck-fast"><span>Orders</span></i></a
+      >
+    </div>
+
+    <div class="banner">
+        <!-- <h1>Hello Admin Welcome Back!!</h1> -->
+    </div>
+    
+    <div id="right-dash">
+        <div id="adminContainer">
+            <h1>ADMIN DASHBOARD <i id="userpage" title="User Data" class="fa-solid fa-users userData"></i></h1>
+            <div class="line"></div>
+            <div class="adminalldata">
+                <div title="Total Product">
+                    <h2>Total Product</h2>
+                    <h2 id="total-product">0</h2>
+                </div>
+                <div title="Active User">
+                    <h2>Active User</h2>
+                    <h2 id="total-user">0</h2>
+                </div>
+                <div title="Catagories">
+                    <h2>Catagories</h2>
+                    <h2>7</h2>
+                </div>
+            </div>
+            <div class="line"></div>
+
+
+
+
+            <div class="pro-cus">
+              <h2>All Admins</h2>
+             <div class="adflex">
+              <div>
+                <table style="width:100%">
+                  <!-- <tr>
+                      <th>Pic</th>
+                      <th>Name</th>
+                      <th>Contact</th>
+                  </tr> -->
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04K6GB334K-U04KUPGE5ML-1ada6a7847ed-512"/></td>
+                      <td>Kumar Rohan</td>
+                      <td class="cnt-info-td"><a href="tel:7992438393"><i class="fa fa-phone"></i></a><a href="mailto: 00rohansah00.kr@gmail.com"><i class="fa fa-envelope"></i></a><a href="mailto: 00rohansah00.kr@gmail.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04QXTJLERM-63e07b3c7c05-512"/></td>
+                      <td>Saurabh Bhatt</td>
+                      <td class="cnt-info-td"><a href="tel:9810295216"><i class="fa fa-phone"></i></a><a href="mailto: Saurabh7412@gmail.com"><i class="fa fa-envelope"></i></a><a href="mailto: Saurabh7412@gmail.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+              </table>
+              </div>
+              
+              <div>
+                <table style="width:100%">
+                  <!-- <tr>
+                      <th>Pic</th>
+                      <th>Name</th>
+                      <th>Contact</th>
+                  </tr> -->
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04RR8N3SEM-af3f8fedb1b0-512"/></td>
+                      <td>Abhishek Kumar Shaw</td>
+                      <td class="cnt-info-td"><a href="tel:9554324450"><i class="fa fa-phone"></i></a><a href="tel:9800121212"><i class="fa fa-envelope"></i></a><a href="mailto: abc@example.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04RETDSEH2-3c6308ebb48d-512"/></td>
+                    <td>Yogesh Sorde</td>
+                    <td class="cnt-info-td"><a href="tel:9665894488"><i class="fa fa-phone"></i></a><a href="tel:9800121212"><i class="fa fa-envelope"></i></a><a href="mailto: abc@example.com"><i class="fa fa-map-marker"></i></a></td>
+                </tr>
+              </table>
+              </div>
+             </div>
+          </div>
+  </body>
+</html>
