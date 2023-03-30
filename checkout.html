@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style0039/checkout.css">
+</head>
+
+<body>
+    <!-- ************************header add here********* -->
+
+
+
+
+
+    <div id="ho17Body">
+        <!-- ****************************************CHECKOUT PART STARTS HERE*********************** -->
+        <div id="checkOutSection">
+
+            <div id="comp1">
+                <h3>PLACE YOUR ORDER IN 4 EASY STEPS</h3>
+            </div>
+            <hr>
+            <div id="comp2">
+                <div id='chCircles'></div>
+                <div>
+                    <h2>SIGNED IN AS <span></span></h2>
+                </div>
+            </div>
+            <hr>
+            <div id="comp3">
+                <div id='chCircles'></div>
+                <div>
+                    <h2>DELIVERY INFORMATION<span></span></h2>
+                    <div id="chComp3Area">
+                        <p>In order to deliver your order, we need to gather some information from you. Please fill the
+                            form below.</p>
+                        <!-- <h2>YOUR PERSONAL DETAILS</h2> -->
+                        <form id='chComp3Form' class='bor'>
+                            <label>TITLE *</label><br>
+                            <select id="chComp3FormT">
+                                <option value="" selected hidden>Select Title</option>
+                                <option value="mr">Mr</option>
+                                <option value="ms">Ms</option>
+                            </select><br>
+                            <label>FIRST NAME *</label><br>
+                            <input id="chComp3FormF" type="text"><br>
+                            <label>LAST NAME *</label><br>
+                            <input id="chComp3FormL" type="text"><br>
+                            <label>EMAIL ADDRESS *</label><br>
+                            <input id="chComp3FormE" type="email"><br>
+                            <label>PHONE NUMBER *</label><br>
+                            <input id="chComp3FormP" type="number"><br>
+                            <label>COUNTRY *</label><br>
+                            <select id="chComp3FormC" name="" id="" disabled>
+                                <option value="India" selected>India</option>
+                            </select><br>
+                            <label>PIN-CODE/ZIP-CODE *</label><br>
+                            <input id="chComp3FormPC" type="number" placeholder="6 Digit pincode"><br>
+                            <label>STATE *</label><br>
+                            <input id="chComp3FormS" type="text"><br>
+                            <label>CITY *</label><br>
+                            <input id="chComp3FormCY" type="text"><br>
+                            <label>STREET ADDRESS / BUILDING / LOCALITY *</label><br>
+                            <input id="chComp3FormADD" type="text" placeholder="Flat no, House no, Street name"><br>
+                            <button id='chComp3FormSubBtn'>CONTINUE TO REVIEW ORDER</button>
+                            <button id='chComp3FormResetBtn'>RESET</button>
+                        </form>
+                    </div>
+                    <div id="chComp3AreaFinal">
+                        <table>
+                            <thead>
+                                <th>CONTACT DETAILS</th>
+                                <th>ADDRESS DETAILS</th>
+                            </thead>
+                            <tbody>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="comp4">
+                <div id='chCircles'></div>
+                <div class='bor' id="comp4Review">
+                    <h2>ORDER REVIEW<span></span></h2>
+                    <div id="comp4ReviewKid">
+                        <p>Please review your order to ensure your details are correct.</p>
+                        <p>If you have reviewed your order, you can proceed to the next stage and make the payment.</p>
+
+                        <!-- ********************************Code from cart.html starts here************************************** -->
+                        <div class='bor' id="cartSection">
+                            <div class='bor' id="caComp1a">
+                                <h4>ITEM(S)</h4>
+                                <h4>QUANTITY</h4>
+                                <h4>TOTAL</h4>
+                                <h4>DELIVERY METHOD</h4>
+                            </div>
+                            <hr>
+                            <div id="caComp1CardSection">
+                            </div>
+
+                            <div class='bor' id="caComp2c">
+                                <h2>TOTAL BREAKDOWN</h2>
+                                <table>
+                                    <tr>
+                                        <td>Order Subtotal</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Promotional Code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h2>YOU PAY</h2>
+                                        </td>
+                                        <td>
+                                            <h2>1</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>INCLUSIVE OF ALL TAXES*</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>YOU SAVE</h4>
+                                        </td>
+                                        <td>
+                                            <h4>1</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button>CONTINUE TO PAYMENT</button>
+                        </div>
+
+
+                        <!-- ********************************Code from cart.html ends here************************************** -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="comp5">
+                <div id='chCircles'></div>
+                <div class='bor' id="comp5PayPage">
+                    <h2>PAYMENT INFORMATION<span></span></h2>
+                    <div class='bor' id="comp5PayTextArea">
+                        <div>
+                            <h4>Select a payment method</h4>
+                            <button>
+                                <div><i class="fas fa-credit-card"></i></div>
+                                <div>
+                                    <h4>Credit/Debit Card</h4>
+                                    Visa, Mastercard, Maestro, Rupay
+                                </div>
+                            </button><br>
+                            <button>
+                                <div><i class="fas fa-university"></i></div>
+                                <div>
+                                    <h4>Netbanking</h4>
+                                    Pay with Internet Banking Account
+                                </div>
+                            </button><br>
+                            <button>
+                                <div><i class="fas fa-wallet"></i></div>
+                                <div>
+                                    <h4>Wallet</h4>
+                                    Pay using a Wallet
+                                </div>
+                            </button><br>
+
+                        </div>
+                        <div id='comp5PayTextAreaFormUp'>
+                            <div id='comp5PayTextAreaFormSib'></div>
+                            <div>
+                                <form id='comp5PayTextAreaForm'>
+                                    <h5>Pay with Credit/Debit Card</h5><br>
+                                    <label>Card Number</label><br>
+                                    <input id='comp5Card' type="number"><br><br>
+                                    <label>Expiry Date</label><br>
+                                    <input id='comp5Exp' type="date" placeholder="MM/YY"><br><br>
+                                    <label>CVV</label><br>
+                                    <input id='comp5CVV' type="password" placeholder="***"><br><br>
+                                    <label>Cardholder's Name</label><br>
+                                    <input id='comp5Name' type="text"><br><br>
+                                    <input type="submit" value='PAY NOW'>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ***********************************footer add here******************************** -->
+
+
+</body>
+
+</html>
+<script src= "./js0039/checkout.js"></script>
