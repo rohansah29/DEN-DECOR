@@ -3,18 +3,35 @@ let productName = JSON.parse(localStorage.getItem("productname"));
 
 let mainSection = document.getElementById("mainSection");
 
+let title = document.getElementById("title");
+// title.innerText = productName;
+let pagination = document.getElementById("pagination-wrapper");
+
 let page = 1;
 
 let fetchedData = [];
 fetchandrender(page, productName);
 
 function fetchandrender(page, productName) {
-    fetch(`https://den-decor.onrender.com/${productName}`)
+    fetch(`https://den-decor.onrender.com/Sofas?_limit=6&_page=${page}`)
         .then((res) => {
+
+            let totalpost = res.headers.get("X-Total-Count")
+            let totalbtn = Math.ceil(totalpost/6);
+            console.log(totalbtn);
+    
+            pagination.innerHTML = null;
+
+            for( let i=1 ; i<=totalbtn ; i++)
+            {
+               pagination.append(getbtn(i,i));
+            }
+            
+            // let buttons = document.getElementsByClassName("btns");
             return res.json();
         })
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             fetchedData = data;
             Display(data);
         })
@@ -24,7 +41,21 @@ function fetchandrender(page, productName) {
 }
 
 
+function getbtn(id,text){
+    let btn = document.createElement("button");
+    btn.classList.add("btns");
+    btn.setAttribute("data-id",id);
+    btn.innerText = text;
+
+    btn.addEventListener("click",()=>{
+        fetchandrender(id);
+    })
+    return btn
+}
+
+
 function Display(data) {
+    // console.log(data);
     let x = ``;
     data.forEach(item => {
         x += `
@@ -41,6 +72,7 @@ function Display(data) {
     });
 
     mainSection.innerHTML = x;
+
 }
 
 
@@ -303,8 +335,10 @@ let s3 = document.getElementById("s3");
 
 s0.addEventListener("click",()=>{
 
-    Display(fetchedData);
+    fetchandrender();
 })
+
+
 
 s1.addEventListener("click", () => {
     
@@ -336,3 +370,4 @@ s3.addEventListener("click", () => {
     Display(sorted);
 
 })
+

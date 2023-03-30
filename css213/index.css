@@ -186,3 +186,28 @@ hr{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(78, 78, 78);
 }
+
+
+                                /* pagination css */
+
+#pagination-wrapper{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.btns{
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 2px 10px 2px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.btns:hover{
+  color: white;
+  background-color:#ED7745;
+  cursor: pointer;
+  scale: 1.1;
+}
+
