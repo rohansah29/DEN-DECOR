@@ -18,7 +18,7 @@ function fetchandrender(page, productName) {
 
             let totalpost = res.headers.get("X-Total-Count")
             let totalbtn = Math.ceil(totalpost/6);
-            console.log(totalbtn);
+            // console.log(totalbtn);
     
             pagination.innerHTML = null;
 
