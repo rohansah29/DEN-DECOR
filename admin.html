@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/c96c8abcd4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./admin css/admin.css" />
+    <link rel="stylesheet" href="./admin_product_pages/admin css/admin.css" />
   </head>
   <body>
     <input type="checkbox" id="check" />
@@ -27,46 +27,47 @@
         <i class="fa fa-bars" id="side-nav_btn"></i>
       </label>
       <div class="left-side">
-        <h3>Kumar Rohan <br />&nbsp;&nbsp;&nbsp;(Admin)</h3>
+        <h3 id="naam">Kumar Rohan</h3>
+        <h3>&nbsp;&nbsp;&nbsp;(Admin)</h3>
       </div>
-      <a href="#"
+      <a href="#" onclick="logout()"
         ><i class="fa-solid fa-right-from-bracket fa-2xl"></i></a
       >
     </header>
 
     <div class="side-nav">
       <div class="logo">
-        <img src="./admin css/newlogo.png" alt="logo" class="image" />
+        <img src="./admin_product_pages/admin css/newlogo.png" alt="logo" class="image" />
       </div>
 
-      <a href="#"
+      <a href="./admin.html"
         ><i class="fa fa-desktop"><span>Dashboard</span></i></a
       >
-      <a href="#"
-        ><i class="fa-solid fa-couch"><span>Sofas</span></i></a
+      <a href="./admin_product_pages/sofas.html"
+         onclick="sofas()"><i class="fa-solid fa-couch"><span>Sofas</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="living()"
         ><i class="fa-solid fa-house"><span>Living Room</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="bedroom()"
         ><i class="fa-solid fa-bed"><span>Bedroom</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="dining()"
         ><i class="fa-solid fa-utensils"><span>Dining</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="storage()"
         ><i class="fa-solid fa-box"><span>Storage</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="study()"
         ><i class="fa-sharp fa-regular fa-pen-to-square"><span>Study</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="lighting()"
         ><i class="fa-solid fa-lightbulb"><span>Lighting</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="users()"
         ><i class="fa-solid fa-users"><span>Users</span></i></a
       >
-      <a href="#"
+      <a href="./admin_product_pages/sofas.html" onclick="orders()"
         ><i class="fa-solid fa-truck-fast"><span>Orders</span></i></a
       >
     </div>
@@ -142,5 +143,105 @@
               </div>
              </div>
           </div>
+
+
+          <div class="content-pro-par container">
+            <div class="pro-table">
+                <div class="recent-project">
+                    <div class="rec-pro-h">
+                        <h2>Recent Orders</h2>
+                    </div>
+                    <div class="see-all">
+                        <button>See all</button>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Sourav Jaiswal</td>
+                        <td>Sofas</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Gourab Talukdar</td>
+                        <td>Showcase</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Shivam Singh</td>
+                        <td>Single Bed</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Nikhil Kumar</td>
+                        <td>Bar Stool</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Shreya Sengupta</td>
+                        <td>Wall Art</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Manish Kumar</td>
+                        <td>TV Units</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Ritwik Das</td>
+                        <td>Curtains</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Shruti Sinha</td>
+                        <td>Runners</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Aniket Arora</td>
+                        <td>Pillows</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Sahil Singh</td>
+                        <td>Dining Table</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Rupam Raj</td>
+                        <td>Bean Bag</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Priya Sinha</td>
+                        <td>Bedroom Set</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Rohan Paul</td>
+                        <td>Laptop Table</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Sandesh Ojha</td>
+                        <td>Bar Cabinates</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+
+            
   </body>
+  <script src="./admin script/admin.js"></script>
 </html>
