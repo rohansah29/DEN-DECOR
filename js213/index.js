@@ -67,13 +67,33 @@ function Display(data) {
             <p>EMI Starts From - ₹ 3,999/-</p>
             <p>Discount - <span>₹ ${item.discount}/-</span></p>
             <button class="comparebtn">ADD TO COMPARE</button>
-            <button data-id=${item.id} class="optionbtn">VIEW PRODUCT</button>
+            <button data-id=${item.id} class="optionbtn"><a data-id=${item.id} class="optionanc" href="./product.html" target="_blank">VIEW PRODUCT</a></button>
         </div>`
     });
 
     mainSection.innerHTML = x;
 
+    let viewproducts = document.getElementsByClassName("optionanc");
+    // console.log(viewproducts);
+
+    for( let i=0 ; i< viewproducts.length ; i++)
+    {
+        viewproducts[i].addEventListener("click",(e)=>{
+            let selectid = e.target.dataset.id;
+            // console.log(e.target.dataset.id);
+            // console.log(fetchedData);
+
+            let selectedproduct = fetchedData.filter((item)=>{
+                return item.id == selectid;
+            })
+            // console.log(selectedproduct);
+            localStorage.setItem("selectedproduct",JSON.stringify(selectedproduct));
+        })
+    }
+
 }
+
+
 
 
 // filter functionality

@@ -124,10 +124,29 @@ hr{
     display: flex;
     justify-content: space-between;
     color: #da5218;
+    background-color: rgb(235, 235, 235);
+    padding-left: 5px;
+    padding-right: 5px;
   }
+
+  #caComp2a>div:nth-child(1){
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-right: 8px;     
+  } 
+
+  #caComp2a>div:nth-child(2){
+    border-top: 1px solid grey;
+    padding-left: 8px;     
+  } 
+
+
+   
+
   #caComp2b{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
   #caComp2b input{
     border: 1px solid grey;
@@ -135,12 +154,68 @@ hr{
     border-radius: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  /* #caComp2b button{
+  #caComp2b button{
+    font-size: 12px;
+    background-color: #ED7745;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #caComp2b button:hover{
+    scale: 1.1;
+    transition: 400ms;
+    cursor: pointer;
+    background-color: #da5218;
+  }
+
+  #caComp2c table{
+    margin: auto;
+    margin-top: 10px;
+   /* border: 1px solid red; */
+   /* gap: 5px; */
+   border-spacing: 4px;
+   border-collapse: separate;
+  }
+
+  .btns{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    margin-top: 10px;
     
-  } */
+  }
 
+  #caComp2d button{
+    font-size: 12px;
+    background-color: #ED7745;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10px;
+    /* margin-top: 10px;  */
+  }
 
+  #caComp2e a{
+    text-decoration: none;
+    color: #ED7745;
+    font-size: 14px;
+  }
 
+  #caComp2d button:hover{
+    scale: 1.1;
+    transition: 400ms;
+    cursor: pointer;
+    background-color: #da5218;
+  }
 
 
 
