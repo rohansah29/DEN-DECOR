@@ -5,217 +5,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style0039/checkout.css">
+    <title>Checkout</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+        } */
+        
+        .checkout-upper {
+            display: flex;
+            /* border: 1px solid black; */
+            justify-content: center;
+        }
+        
+        .checkout-top>p,
+        .checkout-top2>p {
+            margin: 1px;
+            font-size: 20px;
+            /* font-weight: bold; */
+            font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        
+        .checkout-top {
+            background-image: url("https://cdn.shopify.com/s/files/1/0390/2985/files/Shap-1.png?v=1580284424");
+            width: 24%;
+            height: 32px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 8px;
+            text-align: center;
+        }
+        
+        .checkout-top2 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0390/2985/files/Shap-2.png?v=1580284424");
+            width: 24%;
+            height: 32px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 8px;
+            text-align: center;
+        }
+        /* .banner{
+            border: 2px solid black;
+            display: flex;
+        } */
+        .logo__image--medium {
+            width: 40%;
+            margin-left: 218px;
+            margin-top: 25px;
+            
+        }
+        
+        .logo--left {
+            margin-left: 20%;
+            margin-bottom: 2rem;
+            width: 35rem;
+            height: 20rem;
+            margin-top: 2rem;
+            
+        }
+        
+        .shippingdetails {
+            /* border: 1px solid red; */
+            margin-left: 100px;
+        }
+        
+        .shippingdetails>div {
+            /* border: 1px solid green; */
+        }
+        
+        .userdetails {
+            width: 50%;
+            padding: 1%;
+            display: inline-block;
+        }
+        
+        .userdetails>input,
+        select {
+            border: 1px transparent solid;
+            background-clip: padding-box;
+            border-radius: 5px;
+            display: block;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 98%;
+            font-size: 16px;
+            padding: 0.9285714286em 0.7857142857em;
+            word-break: normal;
+            line-height: inherit;
+            background-color: white;
+            color: #333333;
+            border-color: #d9d9d9;
+            margin: 5px;
+        }
+        
+        #width50 {
+            display: inline-block;
+            width: 48.1%;
+        }
+        
+        #width501 {
+            display: inline-block;
+            width: 48.1%;
+        }
+        
+        #width25,
+        select {
+            display: inline-block;
+            width: 31.5%;
+        }
+        
+        .btn__content {
+            /* width: 300px;
+            height: 100px; */
+            background-color: #5E0C8C;
+            padding: 30px;
+            font-size: 20px;
+            color: white;
+            border-radius: 8px;
+            margin-left: 37%;
+            /* margin-top: 11%; */
+            display: inline-block;
+        }
+        
+        .btn__content:hover {
+            background-color: #34124b;
+        }
+        
+        .discount {
+            display: inline-block;
+            width: 40%;
+            background-image: url("./checkout/1676979039front page ss launch.webp");
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 316px;
+        }
+        
+        #alert {
+            color: red;
+            margin-left: 10px;
+        }
+        
+        #alert1 {
+            color: red;
+            margin-left: 10px;
+        }
+        
+        #alert2 {
+            color: red;
+            margin-left: 10px;
+        }
+        
+        #alert3 {
+            color: red;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- ************************header add here********* -->
-
-
-
-
-
-    <div id="ho17Body">
-        <!-- ****************************************CHECKOUT PART STARTS HERE*********************** -->
-        <div id="checkOutSection">
-
-            <div id="comp1">
-                <h3>PLACE YOUR ORDER IN 4 EASY STEPS</h3>
-            </div>
-            <hr>
-            <div id="comp2">
-                <div id='chCircles'></div>
-                <div>
-                    <h2>SIGNED IN AS <span></span></h2>
-                </div>
-            </div>
-            <hr>
-            <div id="comp3">
-                <div id='chCircles'></div>
-                <div>
-                    <h2>DELIVERY INFORMATION<span></span></h2>
-                    <div id="chComp3Area">
-                        <p>In order to deliver your order, we need to gather some information from you. Please fill the
-                            form below.</p>
-                        <!-- <h2>YOUR PERSONAL DETAILS</h2> -->
-                        <form id='chComp3Form' class='bor'>
-                            <label>TITLE *</label><br>
-                            <select id="chComp3FormT">
-                                <option value="" selected hidden>Select Title</option>
-                                <option value="mr">Mr</option>
-                                <option value="ms">Ms</option>
-                            </select><br>
-                            <label>FIRST NAME *</label><br>
-                            <input id="chComp3FormF" type="text"><br>
-                            <label>LAST NAME *</label><br>
-                            <input id="chComp3FormL" type="text"><br>
-                            <label>EMAIL ADDRESS *</label><br>
-                            <input id="chComp3FormE" type="email"><br>
-                            <label>PHONE NUMBER *</label><br>
-                            <input id="chComp3FormP" type="number"><br>
-                            <label>COUNTRY *</label><br>
-                            <select id="chComp3FormC" name="" id="" disabled>
-                                <option value="India" selected>India</option>
-                            </select><br>
-                            <label>PIN-CODE/ZIP-CODE *</label><br>
-                            <input id="chComp3FormPC" type="number" placeholder="6 Digit pincode"><br>
-                            <label>STATE *</label><br>
-                            <input id="chComp3FormS" type="text"><br>
-                            <label>CITY *</label><br>
-                            <input id="chComp3FormCY" type="text"><br>
-                            <label>STREET ADDRESS / BUILDING / LOCALITY *</label><br>
-                            <input id="chComp3FormADD" type="text" placeholder="Flat no, House no, Street name"><br>
-                            <button id='chComp3FormSubBtn'>CONTINUE TO REVIEW ORDER</button>
-                            <button id='chComp3FormResetBtn'>RESET</button>
-                        </form>
-                    </div>
-                    <div id="chComp3AreaFinal">
-                        <table>
-                            <thead>
-                                <th>CONTACT DETAILS</th>
-                                <th>ADDRESS DETAILS</th>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <tr></tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div id="comp4">
-                <div id='chCircles'></div>
-                <div class='bor' id="comp4Review">
-                    <h2>ORDER REVIEW<span></span></h2>
-                    <div id="comp4ReviewKid">
-                        <p>Please review your order to ensure your details are correct.</p>
-                        <p>If you have reviewed your order, you can proceed to the next stage and make the payment.</p>
-
-                        <!-- ********************************Code from cart.html starts here************************************** -->
-                        <div class='bor' id="cartSection">
-                            <div class='bor' id="caComp1a">
-                                <h4>ITEM(S)</h4>
-                                <h4>QUANTITY</h4>
-                                <h4>TOTAL</h4>
-                                <h4>DELIVERY METHOD</h4>
-                            </div>
-                            <hr>
-                            <div id="caComp1CardSection">
-                            </div>
-
-                            <div class='bor' id="caComp2c">
-                                <h2>TOTAL BREAKDOWN</h2>
-                                <table>
-                                    <tr>
-                                        <td>Order Subtotal</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Discount</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Promotional Code</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shipping</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h2>YOU PAY</h2>
-                                        </td>
-                                        <td>
-                                            <h2>1</h2>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>INCLUSIVE OF ALL TAXES*</h4>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>YOU SAVE</h4>
-                                        </td>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <button>CONTINUE TO PAYMENT</button>
-                        </div>
-
-
-                        <!-- ********************************Code from cart.html ends here************************************** -->
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div id="comp5">
-                <div id='chCircles'></div>
-                <div class='bor' id="comp5PayPage">
-                    <h2>PAYMENT INFORMATION<span></span></h2>
-                    <div class='bor' id="comp5PayTextArea">
-                        <div>
-                            <h4>Select a payment method</h4>
-                            <button>
-                                <div><i class="fas fa-credit-card"></i></div>
-                                <div>
-                                    <h4>Credit/Debit Card</h4>
-                                    Visa, Mastercard, Maestro, Rupay
-                                </div>
-                            </button><br>
-                            <button>
-                                <div><i class="fas fa-university"></i></div>
-                                <div>
-                                    <h4>Netbanking</h4>
-                                    Pay with Internet Banking Account
-                                </div>
-                            </button><br>
-                            <button>
-                                <div><i class="fas fa-wallet"></i></div>
-                                <div>
-                                    <h4>Wallet</h4>
-                                    Pay using a Wallet
-                                </div>
-                            </button><br>
-
-                        </div>
-                        <div id='comp5PayTextAreaFormUp'>
-                            <div id='comp5PayTextAreaFormSib'></div>
-                            <div>
-                                <form id='comp5PayTextAreaForm'>
-                                    <h5>Pay with Credit/Debit Card</h5><br>
-                                    <label>Card Number</label><br>
-                                    <input id='comp5Card' type="number"><br><br>
-                                    <label>Expiry Date</label><br>
-                                    <input id='comp5Exp' type="date" placeholder="MM/YY"><br><br>
-                                    <label>CVV</label><br>
-                                    <input id='comp5CVV' type="password" placeholder="***"><br><br>
-                                    <label>Cardholder's Name</label><br>
-                                    <input id='comp5Name' type="text"><br><br>
-                                    <input type="submit" value='PAY NOW'>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <div class="checkout-upper">
+        <div class="checkout-top">
+            <p>Address</p>
+        </div>
+        <div class="checkout-top2">
+            <p></p>
+        </div>
+        <div class="checkout-top2">
+            <p>Payment</p>
         </div>
     </div>
+    <div class="banner">
+        <a class="logo" href="https://www.clarks.in/">
+            <img class="logo--left" src=""alt="">
 
+            <!-- <img alt="" class="logo__image logo__image--medium" src="./checkout/1676979039front page ss launch.webp" > -->
+        </a>
+    </div>
 
-    <!-- ***********************************footer add here******************************** -->
+    <div class="shippingdetails">
+        <div class="userdetails" id="myForm">
+            <h3>Shipping Address</h3>
+            <input id="width50" type="text" placeholder="First Name">
+            <input id="width501" type="text" placeholder="Last Name">
+            <p id="alert1"></p>
 
-
+            <input id="address" type="text" placeholder="Address">
+            <p id="alert2"></p>
+            <input type="text" placeholder="Landmark">
+            <input id="city" type="text" placeholder="City">
+            <p id="alert3"></p>
+            <select size="1" autocomplete="shipping country" data-backup="country" class="field__input field__input--select" aria-required="true" name="checkout[shipping_address][country]" id="checkout_shipping_address_country" placeholder="Country/region"><option data-code="IN" selected="selected" value="India">India</option>
+                <option data-code="US" value="United States">United States</option>
+                <option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
+                <option data-code="GB" value="United Kingdom">United Kingdom</option>
+                <option disabled="disabled" value="---">---</option>
+                <option data-code="CA" value="Canada">Canada</option>
+                <option data-code="FR" value="France">France</option>
+                <option data-code="DE" value="Germany">Germany</option>
+                <option data-code="IN" value="India">India</option>
+                <option data-code="IT" value="Italy">Italy</option>
+                <option data-code="SG" value="Singapore">Singapore</option>
+                <option data-code="ES" value="Spain">Spain</option>
+                <option data-code="SE" value="Sweden">Sweden</option>
+                <option data-code="CH" value="Switzerland">Switzerland</option>
+                <option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
+                <option data-code="GB" value="United Kingdom">United Kingdom</option>
+                <option data-code="US" value="United States">United States</option>
+            </select>
+            <select placeholder="State"></option><option>State</option><option data-alternate-values="[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;]" value="AN">Andaman and Nicobar Islands</option><option data-alternate-values="[&quot;Andhra Pradesh&quot;]" value="AP">Andhra Pradesh</option><option data-alternate-values="[&quot;Arunachal Pradesh&quot;]" value="AR">Arunachal Pradesh</option><option data-alternate-values="[&quot;Assam&quot;]" value="AS">Assam</option><option data-alternate-values="[&quot;Bihar&quot;]" value="BR">Bihar</option><option data-alternate-values="[&quot;Chandigarh&quot;]" value="CH">Chandigarh</option><option data-alternate-values="[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;]" value="CG">Chhattisgarh</option><option data-alternate-values="[&quot;Dadra and Nagar Haveli&quot;]" value="DN">Dadra and Nagar Haveli</option><option data-alternate-values="[&quot;Daman and Diu&quot;]" value="DD">Daman and Diu</option><option data-alternate-values="[&quot;Delhi&quot;]" value="DL">Delhi</option><option data-alternate-values="[&quot;Goa&quot;]" value="GA">Goa</option><option data-alternate-values="[&quot;Gujarat&quot;]" value="GJ">Gujarat</option><option data-alternate-values="[&quot;Haryana&quot;]" value="HR">Haryana</option><option data-alternate-values="[&quot;Himachal Pradesh&quot;]" value="HP">Himachal Pradesh</option><option data-alternate-values="[&quot;Jammu and Kashmir&quot;]" value="JK">Jammu and Kashmir</option><option data-alternate-values="[&quot;Jharkhand&quot;]" value="JH">Jharkhand</option><option data-alternate-values="[&quot;Karnataka&quot;]" value="KA">Karnataka</option><option data-alternate-values="[&quot;Kerala&quot;]" value="KL">Kerala</option><option data-alternate-values="[&quot;Ladakh&quot;]" value="LA">Ladakh</option><option data-alternate-values="[&quot;Lakshadweep&quot;]" value="LD">Lakshadweep</option><option data-alternate-values="[&quot;Madhya Pradesh&quot;]" value="MP">Madhya Pradesh</option><option data-alternate-values="[&quot;Maharashtra&quot;]" value="MH">Maharashtra</option><option data-alternate-values="[&quot;Manipur&quot;]" value="MN">Manipur</option><option data-alternate-values="[&quot;Meghalaya&quot;]" value="ML">Meghalaya</option><option data-alternate-values="[&quot;Mizoram&quot;]" value="MZ">Mizoram</option><option data-alternate-values="[&quot;Nagaland&quot;]" value="NL">Nagaland</option><option data-alternate-values="[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;]" value="OR">Odisha</option><option data-alternate-values="[&quot;Puducherry&quot;]" value="PY">Puducherry</option><option data-alternate-values="[&quot;Punjab&quot;]" value="PB">Punjab</option><option data-alternate-values="[&quot;Rajasthan&quot;]" value="RJ">Rajasthan</option><option data-alternate-values="[&quot;Sikkim&quot;]" value="SK">Sikkim</option><option data-alternate-values="[&quot;Tamil Nadu&quot;]" value="TN">Tamil Nadu</option><option data-alternate-values="[&quot;Telangana&quot;]" value="TS">Telangana</option><option data-alternate-values="[&quot;Tripura&quot;]" value="TR">Tripura</option><option data-alternate-values="[&quot;Uttar Pradesh&quot;]" value="UP">Uttar Pradesh</option><option data-alternate-values="[&quot;Uttarakhand&quot;]" value="UK">Uttarakhand</option><option data-alternate-values="[&quot;West Bengal&quot;]" value="WB">West Bengal</option>
+            </select>
+            <input id="width25" type="text" placeholder="Pincode">
+            <input id="mobile" type="text" placeholder="Mobile Number">
+            <p id="alert"></p>
+        </div>
+        <div class="discount">
+            <a href="products.html">
+                <!-- <img alt="" class="logo__image logo__image--medium" src="./checkout/1676979039front page ss launch.webp" > -->
+            </a>
+        </div>
+        <span onclick="continueToShipping(event)" id="continueToShipping" class="btn__content">Continue to shipping</span>
+    </div>
 </body>
 
 </html>
-<script src= "./js0039/checkout.js"></script>
+
+<script>
+    function continueToShipping(e) {
+        let mobile = document.getElementById("mobile")
+        let address = document.getElementById("address")
+        let city = document.getElementById("city")
+        let name = document.getElementById("width50")
+
+
+        let alert = document.getElementById("alert")
+        let alert1 = document.getElementById("alert1")
+        let alert2 = document.getElementById("alert2")
+        let alert3 = document.getElementById("alert3")
+
+        console.log(mobile.value.length)
+        console.log(name.value.length)
+        if (name.value.length === 0) {
+            name.style.border = "1px solid red"
+
+            alert1.innerHTML = "Enter Name"
+
+        } else if (address.value.length === 0) {
+            address.style.border = "1px solid red"
+
+            alert2.innerHTML = "Enter Address"
+
+        } else if (city.value.length === 0) {
+            address.style.border = "1px solid red"
+
+            alert3.innerHTML = "Enter City"
+        } else if (mobile.value.length === 0) {
+
+            mobile.style.border = "1px solid red"
+
+            alert.innerHTML = "Enter Mobile Number"
+
+
+        } else {
+            e.preventDefault();
+
+            let myForm = document.getElementById("myForm")
+            let name = document.getElementById("width50")
+            let address = document.getElementById("address")
+            let mobile = document.getElementById("mobile")
+            let city = document.getElementById("city")
+
+            let Name = name.value
+            let Address = address.value
+            let Mobile = mobile.value
+            let City = city.value
+
+            // console.log(name.value)
+
+            if (localStorage.getItem("data") === null) {
+                localStorage.setItem("data", JSON.stringify([]))
+            }
+
+
+            let datas = {
+                Name,
+                Address,
+                Mobile,
+                City,
+            };
+
+
+            let arr = JSON.parse(localStorage.getItem("data"))
+                // console.log(arr)
+
+
+            arr.push(datas)
+
+            localStorage.setItem("data", JSON.stringify(arr))
+
+
+            console.log("data:", Name, Address, Mobile)
+            window.location.href = "shipping.html"
+
+        }
+
+
+    }
+</script>
