@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="stylesheet" href="./Style969/nav.css">
     <link rel="stylesheet" href="./Style969/Footbar.css">
@@ -753,3 +754,206 @@ Aanamalai , Ahmedabad , Alappuzha , Aler , Alibaug , Alleppey , Ambala , Ambarna
 <script src="./java969.js/slideshow3.js"></script>
 <script src="./java969.js/slideshow4.js"></script>
 <script src="./java969.js/slideshow5.js"></script>
+=======
+    <title>Product Display</title>
+    <link rel="stylesheet" href="./css213/index.css">
+</head>
+<body>
+    <Header>
+        <!-- header here -->
+    </Header>
+
+    <div id="heading">
+        <h1>Title of Product</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus suscipit rerum corrupti? Veniam accusamus dolor iste repellat quod laborum saepe dolore excepturi et corporis, iusto reprehenderit tempora blanditiis, ipsam voluptas.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- filter and sort -->
+    <div id="fliterlabel">
+        <label for="" >FILTERS</label>
+        <label for="" >SORT BY</label>
+    </div>
+    <div id="filter-sort">
+
+        <div id="filter">
+
+            <div class="dropdown">
+                <button class="dropbtn">Price</button>
+                <div class="dropdown-content">
+                  <a href="#"><label for=""><input type="radio" name="price" id="p0">All Price Range</label></a>
+                  <a href="#"><label for=""><input type="radio" name="price" id="p1">8,000 - 50,000</label></a>
+                  <a href="#"><label for=""><input type="radio" name="price" id="p2">50,001 - 90,000</label></a>
+                  <a href="#"><label for=""><input type="radio" name="price" id="p3">90,001 - 1,30,000</label></a>
+                  <a href="#"><label for=""><input type="radio" name="price" id="p4">1,30,001 - 1,80,000</label></a>
+                  <a href="#"><label for=""><input type="radio" name="price" id="p5">1,80,001 - 2,20,000</label></a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+
+                <!-- <select name="Price" id="Price">
+                    <option type="checkbox" value="">Price</option>
+                    <option value="By Woodcasa">By Woodcasa</option>
+                    <option value="Urban Ladder">By Urban Ladder</option>
+                    <option value="By Stories"> By Stories</option>
+                    <option value="By Arra"> By Arra</option>
+                    <option value="By Duroflex">By Duroflex</option>
+                    <option value="By Solid Wood">By Solid Wood</option>
+                </select> -->
+
+                <button id="dropbtn" class="dropbtn">Brand</button>
+                <div class="dropdown-content">
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b0" value=""> All Brand</label></a>
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b1" value="By Woodcasa">  By Woodcasa</label></a>
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b2" value="Urban Ladder">  By Urban Ladder</label></a>
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b3" value="By Stories">  By Stories</label></a>
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b4" value="By Arra">  By Arra</label></a>
+                  <a href="#"><label for=""> <input type="radio" name="x" id="b5" value="By Duroflex">  By Duroflex</label></a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Material</button>
+                <div class="dropdown-content">
+                    <a href="#"><label for=""> <input type="radio" name="y" id="m0" value="">  All Material</label></a>
+                    <a href="#"><label for=""> <input type="radio" name="y" id="m1" value="Fabric">  Fabric</label></a>
+                    <a href="#"><label for=""> <input type="radio" name="y" id="m2" value="Leather">  Leather</label></a>
+                    <a href="#"><label for=""> <input type="radio" name="y" id="m3" value="Solid Wood">  Solid Wood</label></a>
+                    <a href="#"><label for=""> <input type="radio" name="y" id="m4" value="Half Leather">  Half Leather</label></a>
+                </div>
+              </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Capacity</button>
+                <div class="dropdown-content">
+                    <a href="#"><label for=""> <input type="radio" name="z" id="c0" value="">  All Capacities</label></a>
+                    <a href="#"><label for=""> <input type="radio" name="z" id="c1" value="1">  </label>Single Person</a>
+                    <a href="#"><label for=""> <input type="radio" name="z" id="c2" value="2">  </label>Couples</a>
+                    <a href="#"><label for=""> <input type="radio" name="z" id="c3" value="3">  </label>ThreeSome</a>
+                    <a href="#"><label for=""> <input type="radio" name="z" id="c4" value="4">  </label>Foursome</a>
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+
+        <div id="sort">
+
+            <div class="dropdown">
+                <button class="dropbtn">Sort By</button>
+                <div class="dropdown-content">
+                    <a href="#"><label for="" id="s0"> Recommended</label></a>
+                    <a href="#"><label for="" id="s1"> Price Low to High</label></a>
+                    <a href="#"><label for="" id="s2"> Price High to Low</label></a>
+                    <a href="#"><label for="" id="s3"> Discount</label></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <br>
+
+    <div id="mainSection">
+        <!-- Append cards here -->
+
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div id="lower-section">
+
+        <!-- <h1 style="text-align: center;">Popular Accross Site</h1>
+
+        <div class="slider">
+
+            <button class="backwardbtn"><</button>
+
+            <div class="lower-cards">
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <h1>Title</h1>
+                <h2>Price</h2>
+            </div>
+            <div class="lower-cards">
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <h1>Title</h1>
+                <h2>Price</h2>
+            </div>
+            <div class="lower-cards">
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <h1>Title</h1>
+                <h2>Price</h2>
+            </div>
+            <div class="lower-cards">
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <h1>Title</h1>
+                <h2>Price</h2>
+            </div>
+
+            <button class="forwardbtn">></button>
+
+        </div>
+
+
+
+        <h1 style="text-align: center;">Customer Stories</h1>
+
+        <div class="slider">
+
+            <button class="backwardbtn"><</button>
+
+            <div class="lower-cards">
+                <img src="https://graph.facebook.com/1102361883109653/picture?type=square" alt="">
+                <p>MADHAB NAYAK</p>
+                <P>Via Facebbok</P>
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <p>Product</p>
+                <button>VIEW PRODUCT</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, sunt.</p>
+            </div>
+            <div class="lower-cards">
+                <img src="https://graph.facebook.com/1102361883109653/picture?type=square" alt="">
+                <p>MADHAB NAYAK</p>
+                <P>Via Facebbok</P>
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <p>Product</p>
+                <button>VIEW PRODUCT</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, sunt.</p>
+            </div>
+            <div class="lower-cards">
+                <img src="https://graph.facebook.com/1102361883109653/picture?type=square" alt="">
+                <p>MADHAB NAYAK</p>
+                <P>Via Facebbok</P>
+                <img src="https://www.ulcdn.net/images/products/313542/product/FNSF52FACA3L_-_category.png?1611552736" alt="">
+                <p>Product</p>
+                <button>VIEW PRODUCT</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, sunt.</p>
+            </div>
+
+            <button class="forwardbtn">></button>
+
+        </div> -->
+
+        
+
+    </div>
+
+
+
+
+
+
+    <Footer>
+        <!-- footer here -->
+    </Footer>
+</body>
+<script src="./js213/index.js"></script>
+</html>
+
