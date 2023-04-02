@@ -1,0 +1,1390 @@
+               /* Nav bar css */
+
+
+               /* * {
+                  box-sizing: border-box;
+                } */
+
+               /* .Menu>div div {
+                  box-sizing: border-box;
+                } */
+
+
+               #Navbar {
+                 height: 270px;
+                 width: 100%;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 color: #616161;
+               }
+
+               .A {
+                 height: 30px;
+                 width: 100%;
+                 background-color: #FFD166;
+                 margin-top: -8px;
+                 margin-left: -8px;
+                 /* padding: -10; */
+               }
+
+               .A>p {
+                 text-align: center;
+                 margin: auto;
+                 padding-top: 10px;
+
+               }
+
+               .B {
+                 width: 65%;
+                 display: flex;
+                 /* background-color:#66ffa1; */
+                 margin: auto;
+               }
+
+               .B div:nth-child(1) {
+                 width: 20%;
+                 display: flex;
+                 justify-content: space-evenly;
+               }
+
+               .B div:nth-child(2) {
+                 width: 40%;
+               }
+
+               .B div:nth-child(3) {
+                 width: 40%;
+                 display: flex;
+                 justify-content: space-around;
+                 /* margin: auto; */
+               }
+
+               .C {
+                 width: 70%;
+                 margin: auto;
+                 justify-content: space-around;
+                 display: flex;
+                 /* background-color:#66bdff; */
+               }
+
+               .C div {
+                 justify-content: space-around;
+               }
+
+               .C div:nth-child(1) {
+                 width: 50%;
+                 justify-content: space-evenly;
+
+               }
+
+               .C div:nth-child(2) {
+                 width: 50%;
+                 justify-content: space-around
+               }
+
+               /* .logo{
+  width: 10%;
+} */
+               .C img {
+                 width: 10%;
+                 margin-left: 20px;
+               }
+
+               .C input {
+                 background: #FFFFFF;
+                 border: 1px solid #CCC;
+                 box-shadow: none;
+                 height: 40px;
+                 border-radius: 3px;
+                 width: 40%;
+                 font-size: 15.7px;
+                 margin-left: 60px;
+                 margin-top: 10px;
+               }
+
+               .Menu {
+                 width: 70%;
+                 display: flex;
+                 justify-content: space-around;
+                 margin: auto;
+
+               }
+
+               /* DealZone */
+
+
+
+
+
+               .menuitems1 {
+                 position: relative;
+                 display: inline-block;
+
+               }
+
+               .DealZone {
+                 width: 200px;
+                 /* background-color:red; */
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+
+               }
+
+               .DealZoneitems {
+                 padding: 7px;
+                 background-color: #fff;
+                 ;
+                 /* border: 2px solid; */
+               }
+
+               .menuitems1:hover .DealZone {
+                 display: block;
+                 cursor: auto
+               }
+
+
+               /* Sofazone */
+
+               .SOfaZone div {
+                 padding: 7px;
+               }
+
+               .Recliners div {
+                 padding: 7px;
+               }
+
+               .SofaBed div {
+                 padding: 7px;
+               }
+
+               .Seating div {
+                 padding: 7px;
+               }
+
+               .menuitems2 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems2:hover .SOfaZone {
+                 display: block;
+
+               }
+
+               .menuitems2:hover .Recliners {
+                 display: block;
+
+               }
+
+               .menuitems2:hover .SofaBed {
+                 display: block;
+
+               }
+
+               .menuitems2:hover .Seating {
+                 display: block;
+
+               }
+
+               .menuitems2 {
+                 position: relative;
+               }
+
+               /* .menuitems2 .SOfaZone{
+ display: flex;
+} */
+               .SOfaZone {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Recliners {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .SofaBed {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Seating {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 600px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+
+
+               /* 3.TableZOne */
+
+               .chairs div {
+                 padding: 7px;
+               }
+
+               .Tables div {
+                 padding: 7px;
+               }
+
+               .LivingStorage div {
+                 padding: 7px;
+               }
+
+               .menuitems3:hover .chairs {
+                 display: block;
+               }
+
+               .menuitems3:hover .Tables {
+                 display: block;
+               }
+
+               .menuitems3:hover .LivingStorage {
+                 display: block;
+               }
+
+               .menuitems3 {
+                 position: relative;
+
+               }
+
+               .menuitems3 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               /* .menuitems2 .SOfaZone{
+ display: flex;
+} */
+               .chairs {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Tables {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .LivingStorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+
+
+
+
+
+
+               /* 4.Recliner Zone */
+
+
+
+
+
+               .Beds div {
+                 padding: 7px;
+               }
+
+               .Mattresses div {
+                 padding: 7px;
+               }
+
+               .StorageAccessories div {
+                 padding: 7px;
+               }
+
+               .KidsRoom div {
+                 padding: 7px;
+               }
+
+               .menuitems4:hover .Beds {
+                 display: block;
+               }
+
+               .menuitems4:hover .Mattresses {
+                 display: block;
+               }
+
+               .menuitems4:hover .StorageAccessories {
+                 display: block;
+               }
+
+               .menuitems4:hover .KidsRoom {
+                 display: block;
+               }
+
+               .menuitems4 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems4 {
+                 position: relative;
+
+               }
+
+
+               .Beds {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Mattresses {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .StorageAccessories {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .KidsRoom {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 600px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               /* 5.Dining */
+               .DiningTables div {
+                 padding: 7px;
+               }
+
+               .StorageBarFurniture div {
+                 padding: 7px;
+               }
+
+
+
+
+               .menuitems5:hover .DiningTables {
+                 display: block;
+
+               }
+
+               .menuitems5:hover .StorageBarFurniture {
+                 display: block;
+
+               }
+
+               .menuitems5 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems5 {
+                 position: relative;
+
+
+               }
+
+
+
+
+               .DiningTables {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .StorageBarFurniture {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+
+               }
+
+               /* 6 STORAGE */
+
+
+
+
+               .livingstorage div {
+                 padding: 7px;
+               }
+
+               .bedroomstorage div {
+                 padding: 7px;
+               }
+
+               .diningstorage div {
+                 padding: 7px;
+               }
+
+               .Kidsstorage div {
+                 padding: 7px;
+               }
+
+               .menuitems6:hover .livingstorage {
+                 display: block;
+               }
+
+               .menuitems6:hover .bedroomstorage {
+                 display: block;
+               }
+
+               .menuitems6:hover .diningstorage {
+                 display: block;
+               }
+
+               .menuitems6:hover .Kidsstorage {
+                 display: block;
+               }
+
+               .menuitems6 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems6 {
+                 position: relative;
+
+               }
+
+
+               .livingstorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .bedroomstorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .diningstorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Kidsstorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               /* 7.STUDY */
+
+
+               .studytable div {
+                 padding: 7px;
+               }
+
+               .studychair div {
+                 padding: 7px;
+               }
+
+               .studystorage div {
+                 padding: 7px;
+               }
+
+               .studydecor div {
+                 padding: 7px;
+               }
+
+               .menuitems7:hover .studytable {
+                 display: block;
+               }
+
+               .menuitems7:hover .studychair {
+                 display: block;
+               }
+
+               .menuitems7:hover .studystorage {
+                 display: block;
+               }
+
+               .menuitems7:hover .studydecor {
+                 display: block;
+               }
+
+               .menuitems7 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems7 {
+                 position: relative;
+
+               }
+
+
+               .studytable {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .studychair {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .studystorage {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .studydecor {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+
+               /* 8.lightnings */
+
+               .lightnings div {
+                 padding: 7px;
+               }
+
+               .rugs div {
+                 padding: 7px;
+               }
+
+               .Linen div {
+                 padding: 7px;
+               }
+
+               .walldecor div {
+                 padding: 7px;
+               }
+
+               .homedecor div {
+                 padding: 7px;
+               }
+
+               .tableware div {
+                 padding: 7px;
+               }
+
+               .menuitems8:hover .lightnings {
+                 display: block;
+               }
+
+               .menuitems8:hover .rugs {
+                 display: block;
+               }
+
+               .menuitems8:hover .Linen {
+                 display: block;
+               }
+
+               .menuitems8:hover .walldecor {
+                 display: block;
+               }
+
+               .menuitems8:hover .homedecor {
+                 display: block;
+               }
+
+               .menuitems8:hover .tableware {
+                 display: block;
+               }
+
+               .menuitems8 a {
+                 text-decoration: none;
+                 color: black;
+               }
+
+               .menuitems8 {
+                 position: relative;
+
+               }
+
+
+               .lightnings {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -800px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .rugs {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -600px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .Linen {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -400px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .walldecor {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: -200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .homedecor {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 0px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+               .tableware {
+                 width: 200px;
+                 background-color: #fff;
+                 position: absolute;
+                 left: 200px;
+                 top: 142%;
+                 display: none;
+                 padding-left: 20px;
+
+               }
+
+
+
+
+
+
+
+               /* main section css */
+
+               hr {
+                 width: 65%;
+               }
+
+               #promocode {
+                 width: 65%;
+                 margin: auto;
+                 padding: 6px 6px;
+                 text-align: center;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 color: rgb(76, 76, 76);
+                 background: rgba(199, 239, 207, 0.5);
+               }
+
+               #main_container {
+                 width: 65%;
+                 margin: auto;
+                 /* border: 1px solid black; */
+               }
+
+               #heading {
+                 display: flex;
+                 margin: auto;
+                 justify-content: space-between;
+                 margin-bottom: 20px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+               }
+
+               #heading #p1 {
+                 margin-right: 290px;
+               }
+
+               .div1 {
+                 /* border: 1px solid blue; */
+                 width: 30rem;
+                 display: flex;
+                 justify-content: space-between;
+                 gap: 20px;
+                 align-items: normal;
+               }
+
+               .div1 img {
+                 width: 100%;
+               }
+
+               .div2 {
+                 /* border: 1px solid orange; */
+                 margin-left: -100px;
+                 margin-right: -100px;
+               }
+
+               .div2 p {
+                 width: 100%;
+               }
+
+               .div3 {
+                 /* border: 1px solid red; */
+                 margin-left: 130px;
+                 margin-right: -100px;
+               }
+
+               .div4 {
+                 /* border: 1px solid red; */
+                 margin-left: 120px;
+                 /* padding-left: 30px; */
+               }
+
+               .div4 p {
+                 width: 100%;
+               }
+
+               .remove {
+                 background-color: #ED7745;
+                 border: none;
+                 color: white;
+                 padding: 10px 15px;
+                 border-radius: 4px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               }
+
+
+               .cards {
+                 display: flex;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                 margin: auto;
+                 justify-content: space-between;
+               }
+
+               /* .div3{
+    border: 1px solid red;
+
+} */
+
+
+               #select {
+                 border: 1px solid rgb(222, 222, 222);
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 padding: 4px 8px;
+                 border-radius: 3px;
+               }
+
+               #select:hover {
+                 cursor: pointer;
+                 background-color: rgb(210, 210, 210);
+               }
+
+               .wishlistbtn {
+                 font-size: 12px;
+                 background-color: #ED7745;
+                 border: none;
+                 color: white;
+                 padding: 10px 25px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 border-radius: 5px;
+                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                 margin-left: 10px;
+                 margin-top: 10px;
+               }
+
+               .wishlistbtn:hover {
+                 scale: 1.1;
+                 transition: 400ms;
+                 cursor: pointer;
+                 background-color: #da5218;
+               }
+
+
+               /* cart css  */
+
+
+
+
+
+               #cartSection {
+                 width: 20%;
+                 display: flex;
+                 /* margin: auto; */
+                 margin-left: 880px;
+                 padding-top: 10px;
+                 justify-content: center;
+                 background-color: rgb(253, 251, 249);
+                 padding: 15px 30px;
+                 border-radius: 8px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               }
+
+               #caComp2 h2 {
+                 text-align: center;
+                 color: #ED7745;
+               }
+
+               #caComp2a {
+                 display: flex;
+                 justify-content: space-between;
+                 color: #da5218;
+                 background-color: rgb(235, 235, 235);
+                 padding-left: 5px;
+                 padding-right: 5px;
+               }
+
+               #caComp2a>div:nth-child(1) {
+                 border-right: 1px solid grey;
+                 border-bottom: 1px solid grey;
+                 padding-right: 8px;
+               }
+
+               #caComp2a>div:nth-child(2) {
+                 border-top: 1px solid grey;
+                 padding-left: 8px;
+               }
+
+
+
+
+               #caComp2b {
+                 display: flex;
+                 justify-content: space-between;
+                 margin-top: 10px;
+               }
+
+               #caComp2b input {
+                 border: 1px solid grey;
+                 background-color: white;
+                 border-radius: 3px;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               }
+
+               #caComp2b button {
+                 font-size: 12px;
+                 background-color: #ED7745;
+                 border: none;
+                 color: white;
+                 padding: 10px 25px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 border-radius: 5px;
+                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                 margin-left: 10px;
+                 margin-top: 10px;
+               }
+
+               #caComp2b button:hover {
+                 scale: 1.1;
+                 transition: 400ms;
+                 cursor: pointer;
+                 background-color: #da5218;
+               }
+
+               #caComp2c table {
+                 margin: auto;
+                 margin-top: 10px;
+                 /* border: 1px solid red; */
+                 /* gap: 5px; */
+                 border-spacing: 4px;
+                 border-collapse: separate;
+               }
+
+               .btns {
+                 display: flex;
+                 margin: auto;
+                 /* border: 1px solid red; */
+                 align-items: center;
+                 margin-top: 10px;
+
+               }
+
+               #caComp2d button {
+                 font-size: 12px;
+                 background-color: #ED7745;
+                 border: none;
+                 color: white;
+                 padding: 5px 10px;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 border-radius: 5px;
+                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                 margin-left: 10px;
+                 /* margin-top: 10px;  */
+               }
+
+               #caComp2e a {
+                 text-decoration: none;
+                 color: #ED7745;
+                 font-size: 14px;
+               }
+
+               #caComp2d button:hover {
+                 scale: 1.1;
+                 transition: 400ms;
+                 cursor: pointer;
+                 background-color: #da5218;
+               }
+
+
+
+               /* #cartSection #caComp1{
+    width: 70%; 
+    height: 480px;   
+    overflow-y: scroll;    
+  } */
+               /* #cartSection #caComp2{
+    width: 28%;
+    border: 1px solid blue;      
+  } */
+               /* #caComp1a{
+    display: flex;                
+  }
+  #caComp1a>h4{
+    margin-right: 50%;
+  }
+
+  #caComp1a>h4:nth-child(2){
+    margin-right: 21%;      
+}
+
+  #caComp1CardSection{
+    height: 500px;
+  }
+  .caCardTop{
+    display: flex;        
+    height: 55%;        
+  }
+  .caCardTop>div{
+    width: 15%;
+    border: 2px solid black;        
+  }
+  .caCardTop>div:nth-child(1){        
+    width: 50%;   
+    margin-right: 10%;     
+  }
+  .caCardTop>div:nth-child(2){    
+    padding-top: 10%;   
+    margin-right: 15%;     
+  }
+  .caCardTop>div:nth-child(3){ 
+    padding-top: 10%;      
+    
+  }
+  .caCardTop img{
+    width: 60%;
+    height: 60%;        
+  }
+  .caCardb{
+    display: flex;
+    border: 1px solid teal;
+    align-items: center;
+  }
+  .caCardb span{        
+    text-decoration-line: line-through;
+
+  }
+  #caCardbOff{        
+    text-decoration-line: none;
+    margin-left: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  
+  .caCardb2>h5,.caCardb2>h4{
+    margin: 10% 0%;
+  }
+  .caCardbWish{
+    height: 50px;
+    width: 90%;
+    background-color: #F6F6F6;
+    border: none;
+  }
+  .caCardc{
+    display: flex;  
+    flex-wrap: wrap;   
+    padding-left: 1%;           
+  }
+  .caCardc>div{        
+    height: 20%;        
+    padding-top: 5%;
+    margin: 3%;
+  }
+  .caCardc>div:nth-child(1),.caCardc>div:nth-child(3){
+    width: 15%;     
+    padding-top: 13%;   
+  }
+  .caCardc>div:nth-child(2){        
+    width: 40%;            
+  }
+  .caCardc>div:nth-child(2) input{        
+    padding-left: 25%;
+  }
+  .caCardc>div:nth-child(4){                
+    margin-top: -60px;
+    padding-left: 7%;           
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  .caCardc>div:nth-child(4):hover{  
+    text-underline-offset: 2px;        
+  }
+  .modalBox{
+    display: none;   
+    padding-top: 100px;     
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    width:100%;
+    height: 100%;        
+  }
+  .modalContent{
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: 1px solid black;
+    padding:10px;
+    margin: auto;        
+    margin-top: 5%;
+    width: 50%;
+    height: 35%;
+    text-align: center;
+  }
+  .modalContent span{
+    margin-right: -95%;
+    font-size: 35px;
+  }
+  .modalContent p{
+    margin:2% 0%;
+  }
+  .modalContent button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 30%;
+    margin: 0px 20px;
+    height: 50px;
+  }
+  .modalContent>button:hover{
+    background-color: black;
+    color: white;          
+  }
+  .modalContent>button:nth-child(3){
+    background-color: black;
+    color: white;          
+  }
+  #caComp2a{
+    display: flex;       
+  }
+  #caComp2a>div:nth-child(2){
+    padding: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    color: grey;
+  }
+  #caComp2a>div:nth-child(1){
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;        
+  }
+  #caComp2b{
+    height: 100px;
+    padding-top: 3%;
+  }
+  #caComp2b input{
+    width: 70%;
+    height: 40px;
+    background-color: #f1f0f0;        
+    border: none;
+  }
+  #caComp2b button{
+    width: 28.5%;
+    height: 40px;
+    background-color: white;        
+    border:1px solid black;
+  }
+  #caComp2b>div p{
+    font-size: 12px;
+  }
+  #caComp2b>div span{
+    font-size: 12px;
+  }
+  #caComp2b>div input{
+    width: 10%;
+    height: 10px;
+    background-color: #f1f0f0;        
+    border: none;
+  }
+  #caComp2b>div button{
+    width: 28.5%;
+    height: 40px;
+    background-color: white;  
+    color: grey;      
+    border:none;
+  }
+  #caComp2d{
+    width: 100%;
+  }
+  #caComp2d>button{
+    margin:15px 0px;
+    border: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 50px;
+  }
+  #caComp2e{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  #caComp2e:hover{
+    text-underline-offset: 2px;
+  }
+  #caComp2c>table td{
+    font-weight: 700;
+  } */
+
+
+
+               /* footer css  */
+
+
+
+               #footbar h4 {
+                 text-align: center;
+               }
+
+               .email {
+                 width: 280px;
+                 height: 40px;
+                 line-height: 40px;
+                 border-radius: 3px;
+                 text-align: center;
+               }
+
+               #footbar input {
+                 text-align: center;
+               }
+
+               #footbar button {
+                 width: 280px;
+                 height: 41px;
+                 line-height: 35px;
+                 background-color: #f7750c;
+                 border-radius: 10px;
+                 margin-left: 10px;
+                 margin-bottom: 2px;
+               }
+
+               #footbar div {
+                 display: flex;
+                 justify-content: center;
+                 margin-bottom: 20px;
+
+
+               }
+
+               #footbar {
+                margin-top: 50px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              }
+
+               #details {
+                 display: flex;
+               }
+
+               .left {
+                 display: flex;
+                 width: 50%;
+                 flex-direction: column;
+
+               }
+
+               .total {
+                 display: flex;
+                 justify-content: space-evenly;
+                 background-color: rgb(245, 248, 251);
+                 /* border: 1px solid red; */
+               }
+
+
+               .total div:nth-child(1) {
+                 width: 50%;
+                 margin-left: 100px;
+
+
+               }
+
+               .total div:nth-child(2) {
+                 width: 50%;
+                 margin-left: 100px;
+               }
+
+               .total div:nth-child(2) {
+                 width: 50%;
+                 align-items: flex-start;
+
+               }
+
+               .left div img {
+                 margin-left: 30px;
+                 width: 6%;
+
+               }
+
+               .right {
+                 display: flex;
+                 flex-direction: column;
+               }
+
+               .right img {
+
+                 width: 40%;
+
+
+               }
+
+               .container {
+
+                 display: grid;
+                 grid-template-rows: repeat(1, 1fr);
+                 gap: 10px;
+                 justify-content: space-around;
+                 background-color: #2F4858;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+               }
+
+               .box {
+                 /* border: 1px solid red; */
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+                 gap: 10px;
+                 width: 65%;
+                 padding: 10px;
+                 margin: auto;
+               }
+
+               .box .item h3 {
+                 margin-left: 120px;
+                 color: aliceblue;
+               }
+
+               .box .item p {
+
+                 color: aliceblue;
+               }

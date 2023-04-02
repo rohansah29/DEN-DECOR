@@ -1,0 +1,1130 @@
+
+
+ /* Nav bar css */
+
+
+               /* * {
+                  box-sizing: border-box;
+                } */
+
+               /* .Menu>div div {
+                  box-sizing: border-box;
+                } */
+
+
+                #Navbar {
+                    height: 270px;
+                    width: 100%;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: #616161;
+                  }
+   
+                  .A {
+                    height: 30px;
+                    width: 100%;
+                    background-color: #FFD166;
+                    margin-top: -8px;
+                    margin-left: -8px;
+                    /* padding: -10; */
+                  }
+   
+                  .A>p {
+                    text-align: center;
+                    margin: auto;
+                    padding-top: 10px;
+   
+                  }
+   
+                  .B {
+                    width: 65%;
+                    display: flex;
+                    /* background-color:#66ffa1; */
+                    margin: auto;
+                  }
+   
+                  .B div:nth-child(1) {
+                    width: 20%;
+                    display: flex;
+                    justify-content: space-evenly;
+                  }
+   
+                  .B div:nth-child(2) {
+                    width: 40%;
+                  }
+   
+                  .B div:nth-child(3) {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-around;
+                    /* margin: auto; */
+                  }
+   
+                  .C {
+                    width: 70%;
+                    margin: auto;
+                    justify-content: space-around;
+                    display: flex;
+                    /* background-color:#66bdff; */
+                  }
+   
+                  .C div {
+                    justify-content: space-around;
+                  }
+   
+                  .C div:nth-child(1) {
+                    width: 50%;
+                    justify-content: space-evenly;
+   
+                  }
+   
+                  .C div:nth-child(2) {
+                    width: 50%;
+                    justify-content: space-around
+                  }
+   
+                  /* .logo{
+     width: 10%;
+   } */
+                  .C img {
+                    width: 10%;
+                    margin-left: 20px;
+                  }
+   
+                  .C input {
+                    background: #FFFFFF;
+                    border: 1px solid #CCC;
+                    box-shadow: none;
+                    height: 40px;
+                    border-radius: 3px;
+                    width: 40%;
+                    font-size: 15.7px;
+                    margin-left: 60px;
+                    margin-top: 10px;
+                  }
+   
+                  .Menu {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin: auto;
+   
+                  }
+   
+                  /* DealZone */
+   
+   
+   
+   
+   
+                  .menuitems1 {
+                    position: relative;
+                    display: inline-block;
+   
+                  }
+   
+                  .DealZone {
+                    width: 200px;
+                    /* background-color:red; */
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+   
+                  }
+   
+                  .DealZoneitems {
+                    padding: 7px;
+                    background-color: #fff;
+                    ;
+                    /* border: 2px solid; */
+                  }
+   
+                  .menuitems1:hover .DealZone {
+                    display: block;
+                    cursor: auto
+                  }
+   
+   
+                  /* Sofazone */
+   
+                  .SOfaZone div {
+                    padding: 7px;
+                  }
+   
+                  .Recliners div {
+                    padding: 7px;
+                  }
+   
+                  .SofaBed div {
+                    padding: 7px;
+                  }
+   
+                  .Seating div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems2 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems2:hover .SOfaZone {
+                    display: block;
+   
+                  }
+   
+                  .menuitems2:hover .Recliners {
+                    display: block;
+   
+                  }
+   
+                  .menuitems2:hover .SofaBed {
+                    display: block;
+   
+                  }
+   
+                  .menuitems2:hover .Seating {
+                    display: block;
+   
+                  }
+   
+                  .menuitems2 {
+                    position: relative;
+                  }
+   
+                  /* .menuitems2 .SOfaZone{
+    display: flex;
+   } */
+                  .SOfaZone {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Recliners {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .SofaBed {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Seating {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 600px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+   
+   
+                  /* 3.TableZOne */
+   
+                  .chairs div {
+                    padding: 7px;
+                  }
+   
+                  .Tables div {
+                    padding: 7px;
+                  }
+   
+                  .LivingStorage div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems3:hover .chairs {
+                    display: block;
+                  }
+   
+                  .menuitems3:hover .Tables {
+                    display: block;
+                  }
+   
+                  .menuitems3:hover .LivingStorage {
+                    display: block;
+                  }
+   
+                  .menuitems3 {
+                    position: relative;
+   
+                  }
+   
+                  .menuitems3 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  /* .menuitems2 .SOfaZone{
+    display: flex;
+   } */
+                  .chairs {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Tables {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .LivingStorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+   
+   
+   
+   
+   
+   
+                  /* 4.Recliner Zone */
+   
+   
+   
+   
+   
+                  .Beds div {
+                    padding: 7px;
+                  }
+   
+                  .Mattresses div {
+                    padding: 7px;
+                  }
+   
+                  .StorageAccessories div {
+                    padding: 7px;
+                  }
+   
+                  .KidsRoom div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems4:hover .Beds {
+                    display: block;
+                  }
+   
+                  .menuitems4:hover .Mattresses {
+                    display: block;
+                  }
+   
+                  .menuitems4:hover .StorageAccessories {
+                    display: block;
+                  }
+   
+                  .menuitems4:hover .KidsRoom {
+                    display: block;
+                  }
+   
+                  .menuitems4 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems4 {
+                    position: relative;
+   
+                  }
+   
+   
+                  .Beds {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Mattresses {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .StorageAccessories {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .KidsRoom {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 600px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  /* 5.Dining */
+                  .DiningTables div {
+                    padding: 7px;
+                  }
+   
+                  .StorageBarFurniture div {
+                    padding: 7px;
+                  }
+   
+   
+   
+   
+                  .menuitems5:hover .DiningTables {
+                    display: block;
+   
+                  }
+   
+                  .menuitems5:hover .StorageBarFurniture {
+                    display: block;
+   
+                  }
+   
+                  .menuitems5 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems5 {
+                    position: relative;
+   
+   
+                  }
+   
+   
+   
+   
+                  .DiningTables {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .StorageBarFurniture {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+   
+                  }
+   
+                  /* 6 STORAGE */
+   
+   
+   
+   
+                  .livingstorage div {
+                    padding: 7px;
+                  }
+   
+                  .bedroomstorage div {
+                    padding: 7px;
+                  }
+   
+                  .diningstorage div {
+                    padding: 7px;
+                  }
+   
+                  .Kidsstorage div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems6:hover .livingstorage {
+                    display: block;
+                  }
+   
+                  .menuitems6:hover .bedroomstorage {
+                    display: block;
+                  }
+   
+                  .menuitems6:hover .diningstorage {
+                    display: block;
+                  }
+   
+                  .menuitems6:hover .Kidsstorage {
+                    display: block;
+                  }
+   
+                  .menuitems6 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems6 {
+                    position: relative;
+   
+                  }
+   
+   
+                  .livingstorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .bedroomstorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .diningstorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Kidsstorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  /* 7.STUDY */
+   
+   
+                  .studytable div {
+                    padding: 7px;
+                  }
+   
+                  .studychair div {
+                    padding: 7px;
+                  }
+   
+                  .studystorage div {
+                    padding: 7px;
+                  }
+   
+                  .studydecor div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems7:hover .studytable {
+                    display: block;
+                  }
+   
+                  .menuitems7:hover .studychair {
+                    display: block;
+                  }
+   
+                  .menuitems7:hover .studystorage {
+                    display: block;
+                  }
+   
+                  .menuitems7:hover .studydecor {
+                    display: block;
+                  }
+   
+                  .menuitems7 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems7 {
+                    position: relative;
+   
+                  }
+   
+   
+                  .studytable {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .studychair {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .studystorage {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .studydecor {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+   
+                  /* 8.lightnings */
+   
+                  .lightnings div {
+                    padding: 7px;
+                  }
+   
+                  .rugs div {
+                    padding: 7px;
+                  }
+   
+                  .Linen div {
+                    padding: 7px;
+                  }
+   
+                  .walldecor div {
+                    padding: 7px;
+                  }
+   
+                  .homedecor div {
+                    padding: 7px;
+                  }
+   
+                  .tableware div {
+                    padding: 7px;
+                  }
+   
+                  .menuitems8:hover .lightnings {
+                    display: block;
+                  }
+   
+                  .menuitems8:hover .rugs {
+                    display: block;
+                  }
+   
+                  .menuitems8:hover .Linen {
+                    display: block;
+                  }
+   
+                  .menuitems8:hover .walldecor {
+                    display: block;
+                  }
+   
+                  .menuitems8:hover .homedecor {
+                    display: block;
+                  }
+   
+                  .menuitems8:hover .tableware {
+                    display: block;
+                  }
+   
+                  .menuitems8 a {
+                    text-decoration: none;
+                    color: black;
+                  }
+   
+                  .menuitems8 {
+                    position: relative;
+   
+                  }
+   
+   
+                  .lightnings {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -800px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .rugs {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -600px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .Linen {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -400px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .walldecor {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: -200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .homedecor {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+                  .tableware {
+                    width: 200px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 200px;
+                    top: 142%;
+                    display: none;
+                    padding-left: 20px;
+   
+                  }
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main section css */
+
+#title{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content:space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title1{
+    color: rgb(95, 95, 95);
+}
+
+#titlebtn1{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ED7745;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    margin-top: 50px;
+}
+
+hr{
+    width: 65%;
+}
+
+#mainSection{
+    
+    display: flex;
+    width: 65%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#image img{
+    width: 90%;
+    /* border: 1px solid red; */
+}
+#details{
+    display: block;
+    /* border: 1px solid red; */
+    width: 45%;
+    text-align: center;
+    font-size: 20px;
+}
+#colordiv{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    display: flex;
+    
+}
+#colordiv label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(91, 91, 91);
+
+}
+
+#color{
+    /* border: 2px solid orange; */
+    display: flex;
+    margin: auto;
+    justify-content:space-around;
+    
+    /* gap: 20px 20px; */
+}
+
+#color1, #color2, #color3{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+#color1 img{
+    /* background-color: ; */
+    width: 100%;
+    border-radius: 50%;
+}
+#color2 img{
+    /* background-color: ; */
+    width: 100%;
+    border-radius: 50%;
+}
+#color3 img{
+    /* background-color: ; */
+    width: 100%;
+    border-radius: 50%;
+}
+
+#price{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ED7745;
+    border-radius: 5px;
+    color: white;
+    margin-top: 50px;
+}
+
+#desc p{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    font-size: 18px;
+}
+
+#product_details{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#values{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    width: 60%;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#values span span{
+    color: rgb(91, 91, 91);
+}
+
+#price:hover{
+    scale: 1.1;
+    transition: 400ms;
+    background-color: #da5218;
+}
+
+#addtocart button{
+    font-size: 25px;
+    background-color: #ED7745;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#addtocart div{
+    margin-left: 120px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+#addtocart div select{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+#addtocart button:hover{
+    scale: 1.1;
+    transition: 400ms;
+    cursor: pointer;
+    background-color: #da5218;
+}
+
+
+#delivery{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#delivery img{
+    width: 100%;
+}
+
+#deliv1 img{
+    width: 90%;
+}
+
+#deliv2 img{
+    width: 35%;
+}
+
+#deliv3 img{
+    width: 60%;
+}
+
+#video{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#video video{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+   /* footer css  */
+
+
+
+   #footbar h4 {
+    text-align: center;
+  }
+
+  .email {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  #footbar input {
+    text-align: center;
+  }
+
+  #footbar button {
+    width: 280px;
+    height: 41px;
+    line-height: 35px;
+    background-color: #f7750c;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+  }
+
+  #footbar div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+  }
+
+  #footbar {
+   margin-top: 50px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+  #details {
+    display: flex;
+  }
+
+  .left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(245, 248, 251);
+    /* border: 1px solid red; */
+  }
+
+
+  .total div:nth-child(1) {
+    width: 50%;
+    margin-left: 100px;
+
+
+  }
+
+  .total div:nth-child(2) {
+    width: 50%;
+    margin-left: 100px;
+  }
+
+  .total div:nth-child(2) {
+    width: 50%;
+    align-items: flex-start;
+
+  }
+
+  .left div img {
+    margin-left: 30px;
+    width: 6%;
+
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right img {
+
+    width: 40%;
+
+
+  }
+
+  .container {
+
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #2F4858;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+  .box {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 65%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .box .item h3 {
+    margin-left: 120px;
+    color: aliceblue;
+  }
+
+  .box .item p {
+
+    color: aliceblue;
+  }
