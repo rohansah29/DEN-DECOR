@@ -1,0 +1,85 @@
+#main_container{
+    width: 65%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+#heading{
+    display: flex;
+    margin: auto;
+    justify-content:space-between;
+    margin-bottom: 20px;
+
+}
+#heading #p1{
+    margin-right: 290px;
+}
+
+.div1{
+    /* border: 1px solid blue; */
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+.div2{
+    /* border: 1px solid orange; */
+    margin-left: -100px;
+}
+
+
+.cards{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* .div3{
+    border: 1px solid red;
+
+} */
+
+.div1{
+    gap: 20px;
+    align-items:normal;  
+}
+
+#select{
+    border: 1px solid rgb(222, 222, 222);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+#select:hover{
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+}
+
+/* .div3,.div4{
+    border: 1px solid red;
+    margin-left: 250px;
+} */
+
+.wishlistbtn{
+    font-size: 12px;
+    background-color: #ED7745;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.wishlistbtn:hover{
+    scale: 1.1;
+    transition: 400ms;
+    cursor: pointer;
+    background-color: #da5218;
+}
+#p1{
+    padding-left: 40px;
+}
