@@ -1,4 +1,6 @@
-
+function myfun(){
+    window.location.href = "Allproduct.html";
+}
 // nav bar javascript
 
 // let endpoint=JSON.parse(localStorage.getItem("endpoint")) || [];
@@ -201,7 +203,7 @@ function fetchandrender(page, productName) {
             return res.json();
         })
         .then((data) => {
-            // console.log(data);
+            console.log(data);
             fetchedData = data;
             Display(data);
         })
@@ -277,13 +279,33 @@ let p3 = document.getElementById("p3");
 let p4 = document.getElementById("p4");
 let p5 = document.getElementById("p5");
 
+let fetchedData1=[];
+
+fetch(`https://den-decor.onrender.com/${productName}`)
+.then((res) => {
+
+    let totalpost = res.headers.get("X-Total-Count")
+    let totalbtn = Math.ceil(totalpost / 6);
+    // console.log(totalbtn);
+
+    // let buttons = document.getElementsByClassName("btns");
+    return res.json();
+})
+.then((data) => {
+    console.log(data);
+    fetchedData1 = data;
+})
+.catch((err) => {
+    console.log(err);
+})
+
 p0.addEventListener("click", () => {
     Display(fetchedData);
 })
 
 p1.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.price >= 8000 && ele.price <= 50000;
     })
     console.log(filtered);
@@ -293,7 +315,7 @@ p1.addEventListener("click", () => {
 
 p2.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.price >= 50001 && ele.price <= 90000;
     })
     console.log(filtered);
@@ -303,7 +325,7 @@ p2.addEventListener("click", () => {
 
 p3.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.price >= 90001 && ele.price <= 130000;
     })
     console.log(filtered);
@@ -313,7 +335,7 @@ p3.addEventListener("click", () => {
 
 p4.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.price >= 130001 && ele.price <= 180000;
     })
     console.log(filtered);
@@ -323,7 +345,7 @@ p4.addEventListener("click", () => {
 
 p5.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.price >= 180001 && ele.price <= 220000;
     })
     console.log(filtered);
@@ -353,7 +375,7 @@ b0.addEventListener("click", () => {
 
 b1.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.brand === b1.value
     })
     console.log(filtered);
@@ -363,7 +385,7 @@ b1.addEventListener("click", () => {
 
 b2.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.brand === b2.value
     })
     console.log(filtered);
@@ -373,7 +395,7 @@ b2.addEventListener("click", () => {
 
 b3.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.brand === b3.value
     })
     console.log(filtered);
@@ -383,7 +405,7 @@ b3.addEventListener("click", () => {
 
 b4.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.brand === b4.value
     })
     console.log(filtered);
@@ -393,7 +415,7 @@ b4.addEventListener("click", () => {
 
 b5.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.brand === b5.value
     })
     console.log(filtered);
@@ -417,7 +439,7 @@ m0.addEventListener("click", () => {
 
 m1.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.material === m1.value
     })
     console.log(filtered);
@@ -427,7 +449,7 @@ m1.addEventListener("click", () => {
 
 m2.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.material === m2.value
     })
     console.log(filtered);
@@ -437,7 +459,7 @@ m2.addEventListener("click", () => {
 
 m3.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.material === m3.value
     })
     console.log(filtered);
@@ -447,7 +469,7 @@ m3.addEventListener("click", () => {
 
 m4.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.material === m4.value
     })
     console.log(filtered);
@@ -473,7 +495,7 @@ c0.addEventListener("click", () => {
 
 c1.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.capacity == c1.value
     })
     console.log(filtered);
@@ -483,7 +505,7 @@ c1.addEventListener("click", () => {
 
 c2.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.capacity == c2.value
     })
     console.log(filtered);
@@ -493,7 +515,7 @@ c2.addEventListener("click", () => {
 
 c3.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.capacity == c3.value
     })
     console.log(filtered);
@@ -503,7 +525,7 @@ c3.addEventListener("click", () => {
 
 c4.addEventListener("click", () => {
 
-    let filtered = fetchedData.filter((ele) => {
+    let filtered = fetchedData1.filter((ele) => {
         return ele.capacity == c4.value
     })
     console.log(filtered);
@@ -531,7 +553,7 @@ s0.addEventListener("click", () => {
 
 s1.addEventListener("click", () => {
 
-    let sorted = fetchedData.sort((a, b) => {
+    let sorted = fetchedData1.sort((a, b) => {
         return a.price - b.price
     })
     console.log(sorted);
@@ -542,7 +564,7 @@ s1.addEventListener("click", () => {
 s2.addEventListener("click", () => {
 
 
-    let sorted = fetchedData.sort((a, b) => {
+    let sorted = fetchedData1.sort((a, b) => {
         return b.price - a.price
     })
     console.log(sorted);
@@ -552,7 +574,7 @@ s2.addEventListener("click", () => {
 
 s3.addEventListener("click", () => {
 
-    let sorted = fetchedData.sort((a, b) => {
+    let sorted = fetchedData1.sort((a, b) => {
         return b.discount - a.discount
     })
     console.log(sorted);
