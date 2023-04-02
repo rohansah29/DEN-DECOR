@@ -31,8 +31,8 @@
         <h3>&nbsp;&nbsp;&nbsp;(Admin)</h3>
       </div>
       <a href="#" onclick="logout()"
-        ><i class="fa-solid fa-right-from-bracket fa-2xl"></i></a
-      >
+        ><i class="fa-solid fa-right-from-bracket fa-2xl"></i
+      ></a>
     </header>
 
     <div class="side-nav">
@@ -40,90 +40,163 @@
         <img src="./admin css/newlogo.png" alt="logo" class="image" />
       </div>
 
-      <a href="../admin.html"
-      ><i class="fa fa-desktop"><span>Dashboard</span></i></a
-    >
-    <a href="./sofas.html"
-       onclick="sofas()"><i class="fa-solid fa-couch"><span>Sofas</span></i></a
-    >
-    <a href="./sofas.html" onclick="living()"
-      ><i class="fa-solid fa-house"><span>Living Room</span></i></a
-    >
-    <a href="./sofas.html" onclick="bedroom()"
-      ><i class="fa-solid fa-bed"><span>Bedroom</span></i></a
-    >
-    <a href="./sofas.html" onclick="dining()"
-      ><i class="fa-solid fa-utensils"><span>Dining</span></i></a
-    >
-    <a href="./sofas.html" onclick="storage()"
-      ><i class="fa-solid fa-box"><span>Storage</span></i></a
-    >
-    <a href="./sofas.html" onclick="study()"
-      ><i class="fa-sharp fa-regular fa-pen-to-square"><span>Study</span></i></a
-    >
-    <a href="./sofas.html" onclick="lighting()"
-      ><i class="fa-solid fa-lightbulb"><span>Lighting</span></i></a
-    >
-    <a href="./sofas.html" onclick="users()"
-      ><i class="fa-solid fa-users"><span>Users</span></i></a
-    >
-    <a href="./sofas.html" onclick="orders()"
-      ><i class="fa-solid fa-truck-fast"><span>Orders</span></i></a
-    >
+      <a href="../admin.html"  onclick="dashboard()"
+        ><i class="fa fa-desktop"><span>Dashboard</span></i></a
+      >
+      <a href="./sofas.html" onclick="sofas()"
+        ><i class="fa-solid fa-couch"><span>Sofas</span></i></a
+      >
+      <a href="./sofas.html" onclick="living()"
+        ><i class="fa-solid fa-house"><span>Living Room</span></i></a
+      >
+      <a href="./sofas.html" onclick="bedroom()"
+        ><i class="fa-solid fa-bed"><span>Bedroom</span></i></a
+      >
+      <a href="./sofas.html" onclick="dining()"
+        ><i class="fa-solid fa-utensils"><span>Dining</span></i></a
+      >
+      <a href="./sofas.html" onclick="storage()"
+        ><i class="fa-solid fa-box"><span>Storage</span></i></a
+      >
+      <a href="./sofas.html" onclick="study()"
+        ><i class="fa-sharp fa-regular fa-pen-to-square"
+          ><span>Study</span></i
+        ></a
+      >
+      <a href="./sofas.html" onclick="lighting()"
+        ><i class="fa-solid fa-lightbulb"><span>Lighting</span></i></a
+      >
+      <a href="./sofas.html" onclick="users()"
+        ><i class="fa-solid fa-users"><span>Users</span></i></a
+      >
+      <a href="./sofas.html" onclick="orders()"
+        ><i class="fa-solid fa-truck-fast"><span>Orders</span></i></a
+      >
     </div>
 
     <div class="banner">
-        <!-- <h1>Hello Admin Welcome Back!!</h1> -->
+      <!-- <h1>Hello Admin Welcome Back!!</h1> -->
     </div>
 
-            <div id="admin_Container">
-                <div class="adContainer">
-                    <h1 id="title">Sofas Data</h1>
-                    <div class="line"></div>
-                    <div class="adminshirtdata">
-    
-                        <div>
-                            <h2 id="renderShirt">Total Available Product - </h2>
-                        </div>
-    
-                    </div>
-                    <div class="line"></div>
-                    <div style="overflow-x: auto;" id="displayshirtItem">
-                        <!-- Display Here -->
-                    </div>
-                    <div id="shirtbutton">
-    
-                    </div>
-                </div>
-                <div class="add-data">
-                    <h2>ADD NEW PRODUCTS</h2>
-                    <div>
-                        <form id="shirtform">
-                            <label for="addtitle">Add Title</label>
-                            <input type="text" id="addtitle" name="" placeholder="Add Your Title..">
-    
-                            <label for="addimg">Add Image</label>
-                            <input type="text" id="addimg" name="" placeholder="Add Your Image..">
-                            <label for="addbrand">Add Brand</label>
-                            <input type="text" id="addbrand" name="" placeholder="Add brand..">
-                            <label for="addmaterial">Add Material</label>
-                            <input type="text" id="addmaterial" name="" placeholder="Add material..">
-                            <label for="addcapacity">Add Capacity</label>
-                            <input type="text" id="addcapacity" name="" placeholder="Add capacity..">
-                            <label for="addprice">Add Price</label>
-                            <input type="text" id="addprice" name="" placeholder="Add price..">
-                            <label for="addmultibuyprice">Add Discount</label>
-                            <input type="text" id="addmultibuyprice" name="" placeholder="Add Discount price..">
-                            <label for="adddescription">Add Description</label>
-                            <input type="text" id="adddescription" name="" placeholder="Add Description..">
-                            <input type="submit" value="ADD">
-                        </form>
-                    </div>
-                    <div class="adminPagelogo">
-                        <img src="./admin css/newlogo.png" alt="">
-                   </div>
-                </div>
-            </div>
+    <div id="admin_Container">
+      <div class="adContainer">
+        <h1 id="til">Sofas Data</h1>
+        <div class="line"></div>
+        <div class="adminshirtdata">
+          <div>
+            <h2 id="renderShirt">Total Available Product -</h2>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div id="displayshirtItem">
+          <!-- Display Here -->
+        </div>
+        
+        <div id="shirtbutton"></div>
+      </div>
+      <div class="add-data">
+        <h2>ADD NEW PRODUCTS</h2>
+        <div>
+          <form id="shirtform">
+            <label for="addtitle">Add Title</label>
+            <input
+              type="text"
+              id="addtitle"
+              name=""
+              placeholder="Add Your Title.."
+            />
+
+            <label for="addimg">Add Image</label>
+            <input
+              type="text"
+              id="addimg"
+              name=""
+              placeholder="Add Your Image.."
+            />
+            <label for="addbrand">Add Brand</label>
+            <input
+              type="text"
+              id="addbrand"
+              name=""
+              placeholder="Add brand.."
+            />
+            <label for="addmaterial">Add Material</label>
+            <input
+              type="text"
+              id="addmaterial"
+              name=""
+              placeholder="Add material.."
+            />
+            <label for="addcapacity">Add Capacity</label>
+            <input
+              type="text"
+              id="addcapacity"
+              name=""
+              placeholder="Add capacity.."
+            />
+            <label for="addprice">Add Price</label>
+            <input
+              type="text"
+              id="addprice"
+              name=""
+              placeholder="Add price.."
+            />
+            <label for="addmultibuyprice">Add Discount</label>
+            <input
+              type="text"
+              id="addmultibuyprice"
+              name=""
+              placeholder="Add Discount price.."
+            />
+            <label for="adddescription">Add Description</label>
+            <input
+              type="text"
+              id="adddescription"
+              name=""
+              placeholder="Add Description.."
+            />
+            <input type="submit" value="ADD" />
+          </form>
+        </div>
+        
+        <div class="adminPagelogo">
+          <img src="./admin css/newlogo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="pagination-wrapper" id="pagination-wrapper"></div>
+        </div>
   </body>
   <script src="../admin script/admin.js"></script>
+    <script>
+      let form = document.querySelector("#shirtform");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let Obj = {
+        title: form.addtitle.value,
+        image: form.addimg.value,
+        brand: form.addbrand.value,
+        material: form.addmaterial.value,
+        capacity: form.addcapacity.value,
+        price: form.addprice.value,
+        discount:form.addmultibuyprice.value,
+        description:form.adddescription.value
+    }
+    fetch(`https://den-decor.onrender.com/${keyName[0]}`, {
+        method: "POST",
+        body: JSON.stringify(Obj),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    })
+        .then(res => res.json())
+        .then((data) => {
+            alert("New Product Added!");
+            window.location.reload()
+        })
+
+})
+
+
+    </script>
 </html>

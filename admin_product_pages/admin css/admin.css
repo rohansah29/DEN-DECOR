@@ -410,14 +410,107 @@ input[type=submit]:hover {
 }
 .adminPagelogo{
     width: 100%;
-    height: 100%;
     display: flex;
     place-content: center;
     
 }
 .adminPagelogo>img{
     margin-top: 20px;
-    height: 15%;
+    height: 100px;
     width: 30%;
     border-radius: 50%;
 }
+
+#displayshirtItem{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+.cards{
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 15px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .cards h2{
+    color: #2F4858;
+  }
+  .cards p{
+    color: #494848;
+  }
+  .cards img{
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .cards span{
+    color: rgb(2, 119, 2);
+  }
+
+  .comparebtn{
+    visibility: hidden;
+    background: none;
+    color: #ED7745;
+    border: 3px solid #ED7745;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .optionbtn{
+    visibility: hidden;
+    background-color: #ED7745;
+    color: white;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    /* scale: 1.01; */
+    visibility: visible;
+  }
+
+  .cards:hover .comparebtn{
+    visibility: visible;
+  }
+
+   .cards:hover .optionbtn{
+    visibility: visible;
+  }
+  .comparebtn:hover{
+    scale: 1.1;
+  }
+  .optionbtn:hover{
+    scale: 1.1;
+  }
+
+  .pagination-wrapper {
+    border: 1px dashed #E1E1E1;
+    border-radius: 4px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+
+  #btn{
+    color: #ED7745;
+    border: 3px solid #ED7745;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 1px;
+    cursor: pointer;
+  }
+  #btn:hover{
+    background-color: #ED7745;
+    color: #fff;
+  }
