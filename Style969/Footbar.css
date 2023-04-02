@@ -13,11 +13,12 @@
 }
 #footbar button{
     width: 280px;
-    height: 45px;
-    line-height: 40px;
+    height: 41px;
+    line-height: 35px;
     background-color: #f7750c;
     border-radius: 10px;
     margin-left: 10px;
+    margin-bottom: 2px;
 }
 #footbar div{
     display: flex;
@@ -63,7 +64,7 @@ margin-left: 80px;
     }
 .left div img{
     margin-left: 30px;
-    width: 5%;
+    width: 6%;
 
 }
 .right{
@@ -76,9 +77,34 @@ margin-left: 80px;
    
   
 }
-.lastend div {
-    display: flex;
-    flex-direction: column;
 
+
+
+  
+ 
+  
+.container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr); 
+    gap: -200px; 
+    /* justify-content: space-around; */
+    background-color:#2F4858;
+    
 }
 
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: -40px; 
+    width: 65%; 
+    /* padding: 10px;  */
+    margin: auto;
+}
+.box .item h3{
+    margin-left: 120px;
+    color: aliceblue;
+}
+.box .item p{
+   
+    color: aliceblue;
+}
