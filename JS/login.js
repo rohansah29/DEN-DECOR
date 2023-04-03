@@ -128,6 +128,9 @@
   document.querySelector('#lo3Right>div>div').addEventListener('click',function(){
     // alert('asd');    
     window.location.href='signup.html'
+    
+      window.location.href='login_admin.html';
+     
   })
   let passMail=document.getElementById('lo10PassMail');
   let passPassword=document.getElementById('lo11Pass');

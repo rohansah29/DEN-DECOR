@@ -52,16 +52,25 @@
           <tr>
             <td><input  id="si11mustAgree" type="checkbox" value='accepted'></td>
             <td class="spe">I agree to the <span><a href="#"> Terms & Conditions *</a></span> and <span><a href="#">Privacy Policy</a></span>. </td>
+            
           </tr>
         </table>
-        <input  id='si9SubBtn' type="submit" value="REGISTER"></input>              
+       
+        
+        <input  id='si9SubBtn' type="submit" value="REGISTER"></input>     
+           
       </form>
+      <h4 onclick="admin()">Admin login</h4>
     </div>
     
   </div>
   </div>
 </body>
 </html>
-<script src="./JS/signup.js"></script>
+<script src="./JS/signup.js">
+function admin(){
+  window.location.href="login_admin.html"
+}
+</script>
 
 

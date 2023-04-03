@@ -41,6 +41,8 @@ pin.style.border = "1px solid red"
 alert.innerHTML = "Enter Pincode "
 
 
+
+
 } 
   else {
       e.preventDefault();
@@ -60,6 +62,7 @@ alert.innerHTML = "Enter Pincode "
 
       if (localStorage.getItem("data") === null) {
           localStorage.setItem("data", JSON.stringify([]))
+         
       }
 
 
@@ -82,7 +85,7 @@ alert.innerHTML = "Enter Pincode "
 
       console.log("data:", Name, Address, Mobile)
       window.location.href = "shipping.html"
-
+     
   }
 
 
