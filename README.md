@@ -8,9 +8,7 @@ Project: Make a clone of urbanladder.com website.
 Original-Website: https://www.urbanladder.com
 Cloned-Website:https://gleaming-tartufo-a756fb.netlify.app/allproduct#
 ## Landing Page
-[![Screenshot 2023-04-03 123132](https://user-images.githubusercontent.com/115460422/229435939-49f0a5cd-bbda-474a-94f6-fddd4ba1a0c1.png)](https://drive.google.com/file/d/1bJxy7lLgpHyy50J6KziMhxYWgQIpBY_6/view?usp=share_link)
-
-
+https://drive.google.com/file/d/1bJxy7lLgpHyy50J6KziMhxYWgQIpBY_6/view?usp=share_link
 ## Admin Page
 ![Screenshot 2023-04-03 123132](https://user-images.githubusercontent.com/115460422/229435830-fe8f6d2d-bbfc-456c-b9eb-611e6af6ab4f.png)
 
