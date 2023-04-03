@@ -129,7 +129,7 @@
     // alert('asd');    
     window.location.href='signup.html'
     
-      window.location.href='login_admin.html';
+      // window.location.href='login_admin.html';
      
   })
   let passMail=document.getElementById('lo10PassMail');
