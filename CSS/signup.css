@@ -1,0 +1,175 @@
+
+
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+/* .bor {
+  border: 1px solid red;
+} */
+#img{
+  width: 100%;
+  height: 50rem;
+  /* opacity: .8;  */
+  filter:blur(5px)
+}
+#si1Container {
+  width: 80%;
+  height: 750px;
+  
+  border-radius: 4rem;
+ background-image: url(""); 
+ position: absolute;
+ top: 20px;
+ left: 150px;
+ 
+}
+#si1Container:hover{
+  /* transform: scale(1.1); */
+  cursor: pointer;
+  
+}
+#si1Container > div:nth-child(1) {
+
+  width: 20%;
+  height: 25%;
+  display: block;
+  margin: auto;
+   margin-left: 45%;
+   margin-top: -2%;
+  
+   
+  
+   
+ 
+}
+#si1Container > div:nth-child(2) {
+  width: 50%;
+  margin: auto;
+  /* margin-top: -30px;         */ 
+  height: 80%;
+  
+  /* margin-right: 4rem;
+   */
+}
+
+#si1form{
+  /* margin-top: 5rem; */
+height:96%;
+  text-align: center;
+  margin: 0% 9%;        
+  border: 1px solid #ED7745;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+#si1form:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#si1form>p{
+  /* border: 1px solid teal; */
+  font-weight: 700;                
+  width: 25%;                        
+  margin: auto;
+  margin-top: -13px;
+  background-color: #ED7745;
+  margin-bottom: 4.5%;    
+  font-size: 17px;
+  border-radius: 10px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: white;
+}
+
+#si2title,#si3firstName,#si4lastName,#si5Code,#si6MobNo,#si7EmailID,#si8Pass{
+  width: 15%;
+  height: 9%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+  padding-left: 2%;
+  /* background-color: rgb(247, 245, 245); */
+  border: none;
+  color: black;
+  background-color: rgb(210, 207, 207);
+  border-radius: .5rem;
+}
+/* #si2title>option:nth-last-child(4){
+  background-color: red;
+} */
+#si2title{
+  width:30%;
+  color:black;
+}
+#si5Code{
+color: #868080;
+}
+#si3firstName{
+  width:40%;
+  background-color: rgb(210, 207, 207);
+  border-radius: .5rem;
+  color: black;
+  margin-left: -10px;
+}
+#si4lastName,#si7EmailID,#si8Pass{width: 70%;padding-left: 20px;
+  background-color: rgb(210, 207, 207);
+  border-radius: .5rem;
+
+}
+#si6MobNo{
+  width: 50%;
+  margin-left: -15px;
+}
+#si9SubBtn{
+  
+  width: 90%;
+   border: 1px solid white; 
+  height: 10%;
+  background-color: rgb(194, 188, 188);
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 6px;
+  border-radius: .8rem;
+}
+#si9SubBtn:hover{
+  background-color: #ED7745;
+  color: white;
+}
+
+#si12,#si13,#si11mustAgree{
+  /* border: 1px solid teal; */
+  color: #ED7745;
+         
+}
+
+#si1Container table{
+  width: 70%;
+  margin: auto;    
+  font-size: 10px;    
+}
+#si1Container td{
+  padding:1px;
+  text-align: left;
+}
+#si1Container span{
+  text-decoration: underline;
+}
+#si14Whatsapp{
+   color:green
+}
+
+
+.spe{
+  color: white;
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+  color:#ED7745;
+}
+ .den{
+  width: 60%;
+  
+} 

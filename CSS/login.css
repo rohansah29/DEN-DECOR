@@ -1,0 +1,213 @@
+* {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+.den{
+    width: 60%;
+    
+  } 
+body{
+  
+  background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+
+  
+  
+}
+#lo1Container {
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  border: 3px solid #ED7745;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+#lo1Container>div:nth-child(1) {
+  width: 20%;
+  display: block;
+  margin: auto;
+  margin-left: 45%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#lo1Container>div:nth-child(2) {
+  display: flex;
+  height: 75%;
+}
+
+#lo2Left,
+#lo3Right {
+  width: 50%;
+  margin-left: 25px;
+
+}
+
+.lo4Choice {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lo4Choice>h4 {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.lo4Choice>h4:nth-child(1) {
+  margin-bottom: 15px;
+
+}
+
+.lo5underline {
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
+
+#lo6ReqOtpBtn1{
+  width: 85%;
+  height: 45px;
+  margin-bottom: .5rem;
+  background-color: #ED7745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+#lo6ReqOtpBtn1:hover{
+  transform: scale(1.04);
+  font-size: 18px;
+  
+}
+#lo7ReqOtpBtn2 {
+  width: 85%;
+  font-size: 15px;
+  background-color: #ED7745;
+  height: 50px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+#lo7ReqOtpBtn2:hover{
+  transform: scale(1.04);
+  font-size: 18px;
+}
+
+#lo2Left {
+  border-right: 2px solid grey;
+  
+  height: 450px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+} 
+
+#lo2Left>div,
+#lo3Right>div>div {
+  /* *****************************Here */
+  text-align: center;
+  margin: 9%;
+  border: 2px solid #ED7745;
+  border-radius: 10px;
+  box-shadow: rgba(224, 150, 48, 0.25) 0px 50px 100px -20px, rgba(18, 2, 2, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+#lo3Right>div>div {
+  height: 50px;
+  padding-top: 15px;
+}
+
+#lo2Left>div>p {
+  /* border: 1px solid teal; */
+  font-weight: 600;
+  width: 60%;
+  margin: auto;
+  margin-top: -10px;
+  background-color: #ED7745;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+/* #lo2Left>div>p:nth-child(1){
+    width: 55%;         
+  } */
+#lo8Code,
+#lo9PhNo,
+#lo11Pass,
+#lo10PassMail {
+  width: 15%;
+  height: 40px;
+  margin-right: 1%;
+  margin-bottom: 5%;
+  padding-left: 2%;
+  background-color: rgb(247, 245, 245);
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+#lo9PhNo,
+#lo11Pass,
+#lo10PassMail {
+  width: 40%;
+}
+
+#lo12Out h4 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#lo13Email {
+  width: 300px;
+  height: 40px;
+  padding-left: 25%;
+  background-color: rgb(247, 245, 245);
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+
+#alt14OTP,
+#alt15Pass {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 120px;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#lo3Right>div {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#lo3Right>div p {
+  
+  font-size: 22px;
+  margin: 20px 0px;
+}
+
+#lo3Right>div>div:hover {
+  background-color: #ED7745;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+}
+

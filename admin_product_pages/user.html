@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active User Data</title>
+    <style>
+        
+        #main{
+            text-align: center;
+            margin: 0px 0px;
+            padding: 2%;
+        }
+    table{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        border-collapse: collapse;
+       
+        font-size: 0.9em;
+        width: 70%;
+        border: 0px solid red;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    table thead tr{
+        
+        background-color: rgba(9,30,66,.87);
+        color: #ffff;
+        text-align: left;
+        font-weight: bold;
+
+    }
+   
+    table thead tr th{
+        padding-left: 2%;
+        font-size: 25px;
+        height: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    table tbody tr td{
+        padding: 3%;
+        padding-left: 2%;
+        font-size: 20px;
+        font-weight: bold;
+        height: 20%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+    }
+  
+    /* #userdata tr{
+        border-bottom: 1px solid black;
+
+    } */
+    #userdata tr>td{
+        height: 20%;
+    }
+   #userdata>tr>button{
+    margin-top: 25px;
+    cursor: pointer;
+    background-color:white;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    background-color: rgba(9,30,66,.87);
+    border-radius: 5px;
+    padding: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   }
+   #mh{
+    display: flex;
+    width: 99vw;
+    justify-content: center;
+    text-align: left;
+    color: #383838;
+    
+  }
+  h1{
+    position: absolute;
+    top: 1%;
+  }
+
+
+img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: fill;
+    background-size: cover; */
+    /* opacity: .8;  */
+    filter:blur(5px)
+  
+  }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./admin css/pngtree-pink-background-design-of-science-and-technology-interconnection-picture-image_1645712.jpg" alt="error">
+        <div id="main">
+        
+            <div id="mh">
+                <h1>Active User Data : <span id="spn1">0</span></h1>
+    
+               </div>
+            <table>
+                <thead>
+                    <tr id="head">
+                    <th>Id</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email ID</th>
+                    <th>Password</th>
+                    <th>Mobile No</th>
+                    <th></th>
+                    
+                    </tr>
+                </thead>
+                
+                <tbody id="userdata">
+    
+                </tbody>
+            </table>
+    
+        </div>
+    </div>
+</body>
+</html>
+<script>
+   
+
+    let con=document.querySelector("#userdata");
+
+    async function asyncdata(){
+        try {
+            let res=await fetch("https://den-decor.onrender.com/users")
+
+            res = await res.json()
+        
+            displayuserdata(res)
+            console.log(res)
+           
+          const users = res;
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    asyncdata()
+
+
+function displayuserdata(data){
+
+    con.innerHTML=null;
+    let total=document.querySelector("#spn1");
+    total.textContent=data.length
+       
+    
+
+   
+    data.forEach((element,index)=> {
+        let row=document.createElement("tr");
+        let id=document.createElement("td");
+        let firstname=document.createElement("td");
+        let lastname=document.createElement("td");
+        let email=document.createElement("td");
+        let password=document.createElement("td");
+        let mobileno=document.createElement("td");
+            id.textContent=element.id;
+            firstname.textContent=element.firstname||element.firstName;
+            lastname.textContent=element.lastname||element.lastName;
+            email.textContent=element.email;
+            password.textContent="********"
+            mobileno.textContent=element.mobile||element.number;
+        let del=document.createElement("button");
+            del.textContent="Delete"
+            del.addEventListener("click",(e)=>{
+            
+        function generateOTP() {
+        const otp = Math.floor(100000 + Math.random() * 900000);
+
+        const input = prompt(`Your OTP is: ${otp}. Enter the OTP to continue.`);
+
+        if (input == otp) {
+            
+        let id=1;
+        
+        fetch(`https://gentshub-y1jk.onrender.com/users/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        })
+    
+        .then(response => {
+        if (response.ok) {
+            alert('User deleted successfully!');
+
+        } else {
+            console.error('Failed to delete user!');
+        }
+        })
+        .catch(error => {
+        console.error('Network error:', error);
+        });
+
+            
+          alert('OTP is valid!');
+        
+
+        } else {
+          alert('OTP is invalid. Please try again.');
+        }
+      }
+    generateOTP()
+            })
+       row.append(id,firstname,lastname,email,password,mobileno,del)
+        con.append(row)
+
+    });
+    
+}
+
+</script>

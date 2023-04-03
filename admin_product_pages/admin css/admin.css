@@ -1,0 +1,518 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+header{
+    position: fixed;
+    background: rgba(9,30,66,.87);
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+header a{
+    margin-left: 84%;
+    color: #fff;
+}
+.left-side h3{
+    color: #fff;
+    margin: 0;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 50px;
+}
+.left-side h3:hover{
+    color: #ffe0d5;
+}
+.left_side span{
+    color: #fff;
+}
+.side-nav{
+    background: rgba(9,30,66,.87);
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+.logo{
+    text-align: center;
+}
+.side-nav .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.side-nav a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.side-nav a:hover{
+    background: #ff7f50;
+}
+.side-nav i{
+    padding-right: 10px;
+}
+.side-nav i span{
+   font-family: 'Roboto',sans-serif;
+   margin-left: 25px; 
+}
+
+label #side-nav_btn{
+    z-index:1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition-property: color;
+}
+label #side-nav_btn:hover{
+    color: #ff7f50;
+}
+#check:checked ~ .side-nav{
+    left:-190px;
+}
+#check:checked ~ .side-nav a span{
+    display: none;
+}
+#check:checked ~ .side-nav a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+/* .banner{
+    margin-left: 250px;
+    background-color: darkblue;
+
+}
+#check:checked ~ .banner{
+    margin-left: 60px;
+} */
+#check{
+    display: none;
+}
+
+
+/* ---------------------------------Styling for Admin Dashboard---------------------- */
+#right-dash {
+    display: flex;
+    width: 85%;
+    margin-left: 19%;
+    padding-top: 5%;
+    transition: 0.5s;
+}
+#check:checked ~ #right-dash{
+    margin-left: 10%;
+    transition: 0.5s;
+}
+#adminContainer {
+    width: 65%;
+    height: 100%;
+}
+
+.userData {
+    margin-left: 55%;
+    height: 10px;
+}
+
+#adminContainer>h1,
+#adminShirtContainer>h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.line {
+    border: 2px solid grey;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.adminalldata {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130x;
+    width: 80%;
+    height: 40%;
+    gap: 3%;
+
+}
+
+.adminalldata>div {
+    border-radius: 20px;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.adminalldata>div:nth-child(1) {
+    background-color: #AB47BC;
+}
+
+.adminalldata>div:nth-child(2) {
+    background-color: rgb(208, 66, 78);
+}
+
+.adminalldata>div:nth-child(3) {
+    background-color: #F5A623;
+}
+
+.adminalldata>div>h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.pro-table {
+    margin-top: -600px;
+    margin-left: 850px;
+    width: 40%;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.pro-cus {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 15px;
+    margin-left: 70px;
+}
+.pro-cus h2{
+    text-decoration: underline;
+    text-align: center;
+}
+table th {
+    text-align: left;
+}
+
+table td {
+    padding: 8px 0px;
+}
+
+table td {
+    padding: 20px 0px 0px 0px;
+    font-size: small;
+}
+
+span.rev-span {
+    width: 10px;
+    height: 10px;
+    background-color: #5afd5f;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+span.progress-span {
+    width: 10px;
+    height: 10px;
+    background-color: #523a71;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+span.pending-span {
+    width: 10px;
+    height: 10px;
+    background-color: #c2420a;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.see-all button {
+    background-color: #fd5c62;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rec-pro-h {
+    float: left;
+}
+
+.see-all {
+    float: right;
+}
+
+.recent-project {
+    margin-bottom: 20px;
+}
+
+img.table-img {
+    width: 35px;
+}
+
+td.cnt-info-td i {
+    color: #fd5c62;
+    padding-right: 8px;
+}
+.adflex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* ---------------------------------Styling for Admin product---------------------- */
+#admin_Container {
+    display: flex;
+    margin-top: 0%;
+    margin-left: 17%;
+    width: 82%;
+    transition: 0.5s;
+}
+#check:checked ~ #admin_Container{
+    margin-left: 10%;
+    transition: 0.5s;
+}
+
+.adContainer {
+    width: 65%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.add-data {
+    margin-top: 6%;
+    padding: 3%;
+background-color: #ccc;
+    width: 32%;
+    margin-left: 2%;
+}
+
+.adminshirtdata>div>h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+table {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-collapse: collapse;
+
+}
+
+th {
+    
+    text-align: left;
+    padding: 10px;
+}
+td {
+    
+    text-align: left;
+    padding: 10px;
+}
+
+#suitbutton{
+    margin-top: 2%;
+}
+#suitbutton>button{
+    height: 26px;
+    width: 26px;
+    background-color:white ;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+#shirtbutton{
+    margin-top: 2%;
+}
+#shirtbutton>button{
+    height: 26px;
+    width: 26px;
+    background-color:white ;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+#pantbutton{
+    margin-top: 2%;
+}
+#pantbutton>button{
+    height: 26px;
+    width: 26px;
+    background-color:white ;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+
+#pantbutton>button:hover,#shirtbutton>button:hover ,#suitbutton>button:hover{
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+
+
+
+#displayshirtItem {
+    margin-top: 1%;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(0, 21, 50);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 21, 50);
+}
+
+#addShirt-data>h2 {
+    margin: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#addShirt-data>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15%;
+}
+.adminPagelogo{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    
+}
+.adminPagelogo>img{
+    margin-top: 20px;
+    height: 220px;
+    width: 60%;
+    border-radius: 50%;
+}
+
+#displayshirtItem{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+.cards{
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 15px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .cards h2{
+    color: #2F4858;
+  }
+  .cards p{
+    color: #494848;
+  }
+  .cards img{
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .cards span{
+    color: rgb(2, 119, 2);
+  }
+
+  .comparebtn{
+    visibility: hidden;
+    background: none;
+    color: #ED7745;
+    border: 3px solid #ED7745;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .optionbtn{
+    visibility: hidden;
+    background-color: #ED7745;
+    color: white;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    /* scale: 1.01; */
+    visibility: visible;
+  }
+
+  .cards:hover .comparebtn{
+    visibility: visible;
+  }
+
+   .cards:hover .optionbtn{
+    visibility: visible;
+  }
+  .comparebtn:hover{
+    scale: 1.1;
+  }
+  .optionbtn:hover{
+    scale: 1.1;
+  }
+
+  .pagination-wrapper {
+    border: 1px dashed #E1E1E1;
+    border-radius: 4px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+
+  #btn{
+    color: #ED7745;
+    border: 3px solid #ED7745;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 1px;
+    cursor: pointer;
+  }
+  #btn:hover{
+    background-color: #ED7745;
+    color: #fff;
+  }

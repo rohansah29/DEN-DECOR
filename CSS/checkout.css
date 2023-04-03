@@ -1,0 +1,241 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+#Navbar{
+  height: 270px;
+  width: 100%;
+ margin-bottom:5rem;
+}
+.A{
+height: 30px;
+width: 100%;
+background-color:#FFD166;
+margin-top: -8px;
+/* padding: -10; */
+}
+.A>p{
+text-align: center;
+margin: auto;
+padding-top: 10px;
+
+}
+.B{
+  width: 65%;
+  display: flex;
+  /* background-color:#66ffa1; */
+  margin: auto;
+}
+
+.B div:nth-child(1){
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.B div:nth-child(2){
+  width: 40%;
+}
+.B div:nth-child(3){
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  /* margin: auto; */
+}
+.C {
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+  display: flex;
+  /* background-color:#66bdff; */
+}
+.C div{
+  justify-content: space-around;
+}
+.C div:nth-child(1){
+  width: 50%;
+  justify-content: space-evenly;
+
+}
+.C div:nth-child(2){
+  width: 50%;
+  justify-content: space-around
+ 
+
+}
+/* .logo{
+  width: 10%;
+} */
+.C img{
+  width: 10%;
+  margin-left:20px ;
+}
+
+.C input{
+  background: #FFFFFF;
+  border: 1px solid #CCC;
+  box-shadow: none;
+  height: 40px;
+  border-radius: 3px;
+  width: 40%;
+  font-size: 15.7px;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.checkout-upper {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+font-size: 20px;
+}
+
+.checkout-top>p,
+.checkout-top2>p {
+  margin: 1px;
+  font-size: 40px;
+  /* font-weight: bold; */
+  
+}
+
+.checkout-top {
+  
+  width: 24%;
+  height: 32px;
+  color: #ED7745;
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 8px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checkout-top2 {
+  
+  width: 24%;
+  height: 32px;
+  color: rgb(130, 127, 127);
+  font-size: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 8px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.logo__image--medium {
+  width: 40%;
+  margin-left: 218px;
+  margin-top: 25px;
+  
+}
+
+
+
+.shippingdetails {
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.shippingdetails>div {
+  /* border: 1px solid green; */
+}
+
+.userdetails {
+  width: 45%;
+  padding: 1%;
+  display: inline-block;
+  margin-top: 2rem;
+  
+}
+.userdetails h3{
+  margin-bottom: 2%;
+}
+.userdetails>input,
+select {
+  border: 1px transparent solid;
+  background-clip: padding-box;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 98%;
+  font-size: 16px;
+  padding: 0.9285714286em 0.7857142857em;
+  word-break: normal;
+  line-height: inherit;
+  background-color: white;
+  color: #333333;
+  border-color: #d9d9d9;
+  margin: 5px;
+}
+
+#width50 {
+  display: inline-block;
+  width: 48.1%;
+}
+
+#width501 {
+  display: inline-block;
+  width: 48.1%;
+}
+
+#width25,
+select {
+  display: inline-block;
+  width: 31.5%;
+}
+
+.btn__content {
+  width: 200px;
+  height: 10px; 
+  
+  
+  font-size: 15px;
+  color: black;
+  border-radius: 8px;
+  text-align: center;          
+  display: inline-block;
+  padding: 15px;
+
+}
+
+.btn__content:hover {
+  background-color: #ED7745;
+   transform: scale(1.2);
+font-size: 15px;
+color: white;
+}
+
+.discount {
+  display: inline-block;
+  width: 45%;
+  background: url("https://www.ulcdn.net/media/subscription_popup/Set-the-scene-Sign-up-pop-up.jpg?1679855082");
+background-size: cover;
+  
+  height: 480px;
+  
+  
+}
+
+#alert {
+  color: red;
+  margin-left: 10px;
+}
+
+#alert1 {
+  color: red;
+  margin-left: 10px;
+}
+
+#alert2 {
+  color: red;
+  margin-left: 10px;
+}
+
+#alert3 {
+  color: red;
+  margin-left: 10px;
+}

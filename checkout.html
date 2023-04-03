@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+ <link rel="stylesheet" href="./CSS/checkout.css">
+</head>
+
+<body>
+
+    <div id="Navbar">
+        <div class="A"><p>Set the Scene | Up to 50% off | Click to shop! </p></div><br>
+        <div class="B">
+            <div><P>Help</P>
+                <p>Track Order</p>
+            </div>
+            <div></div>
+            <div><p>Stores</p>
+            <p>Bulk Orders</p>
+        <p>Gift CArds</p>
+    <p>UL Services</p>
+</div>
+        </div>
+        <hr>
+        <div class="C">
+    
+    <img src="./image/newlogo.png" alt="" class="logo">
+    
+        <input type="search" placeholder="Search" class="inputsearch">
+  
+  
+      <p>Track</p>
+     <p>Profile</p>
+     <p>Wishlist</p>
+     <p>Cart</p> 
+
+     <!-- <img src="./icons/truck.svg" alt="" class="i">
+     <img src="./icons/profile.svg" alt="" class="i">
+     <img src="./icons/love.svg" alt="" class="i">
+     <img src="./icons/cart.svg" alt="" class="i"> -->
+     </div>
+    <div class="checkout-upper">
+        <div class="checkout-top">
+            <p>1.Address  > </p>
+            
+        </div>
+        
+        <div class="checkout-top2">
+            <p>2.Shipping ></p>
+        </div>
+        <div class="checkout-top2">
+            <p>3.Payment </p>
+        </div>
+    </div>
+    <div class="banner">
+        <a class="logo" href="#">
+            <img class="logo--left" src=""alt="">
+
+            <!-- <img alt="" class="logo__image logo__image--medium" src="" > -->
+        </a>
+    </div>
+
+    <div class="shippingdetails">
+        <div class="userdetails" id="myForm">
+            <h3>Shipping Address</h3>
+            <input id="width50" type="text" placeholder="First Name">
+            <input id="width501" type="text" placeholder="Last Name">
+            <p id="alert1"></p>
+
+            <input id="address" type="text" placeholder="Address">
+            <p id="alert2"></p>
+            <input type="text" placeholder="Landmark">
+            <input id="city" type="text" placeholder="City">
+            <p id="alert3"></p>
+            <select size="1" autocomplete="shipping country" data-backup="country" class="field__input field__input--select" aria-required="true" name="checkout[shipping_address][country]" id="checkout_shipping_address_country" placeholder="Country/region"><option data-code="IN" selected="selected" value="India">India</option>
+                <option data-code="US" value="United States">United States</option>
+                <option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
+                <option data-code="GB" value="United Kingdom">United Kingdom</option>
+                <option disabled="disabled" value="---">---</option>
+                <option data-code="CA" value="Canada">Canada</option>
+                <option data-code="FR" value="France">France</option>
+                <option data-code="DE" value="Germany">Germany</option>
+                <option data-code="IN" value="India">India</option>
+                <option data-code="IT" value="Italy">Italy</option>
+                <option data-code="SG" value="Singapore">Singapore</option>
+                <option data-code="ES" value="Spain">Spain</option>
+                <option data-code="SE" value="Sweden">Sweden</option>
+                <option data-code="CH" value="Switzerland">Switzerland</option>
+                <option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
+                <option data-code="GB" value="United Kingdom">United Kingdom</option>
+                <option data-code="US" value="United States">United States</option>
+            </select>
+            <select placeholder="State"></option><option>State</option><option data-alternate-values="[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;]" value="AN">Andaman and Nicobar Islands</option><option data-alternate-values="[&quot;Andhra Pradesh&quot;]" value="AP">Andhra Pradesh</option><option data-alternate-values="[&quot;Arunachal Pradesh&quot;]" value="AR">Arunachal Pradesh</option><option data-alternate-values="[&quot;Assam&quot;]" value="AS">Assam</option><option data-alternate-values="[&quot;Bihar&quot;]" value="BR">Bihar</option><option data-alternate-values="[&quot;Chandigarh&quot;]" value="CH">Chandigarh</option><option data-alternate-values="[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;]" value="CG">Chhattisgarh</option><option data-alternate-values="[&quot;Dadra and Nagar Haveli&quot;]" value="DN">Dadra and Nagar Haveli</option><option data-alternate-values="[&quot;Daman and Diu&quot;]" value="DD">Daman and Diu</option><option data-alternate-values="[&quot;Delhi&quot;]" value="DL">Delhi</option><option data-alternate-values="[&quot;Goa&quot;]" value="GA">Goa</option><option data-alternate-values="[&quot;Gujarat&quot;]" value="GJ">Gujarat</option><option data-alternate-values="[&quot;Haryana&quot;]" value="HR">Haryana</option><option data-alternate-values="[&quot;Himachal Pradesh&quot;]" value="HP">Himachal Pradesh</option><option data-alternate-values="[&quot;Jammu and Kashmir&quot;]" value="JK">Jammu and Kashmir</option><option data-alternate-values="[&quot;Jharkhand&quot;]" value="JH">Jharkhand</option><option data-alternate-values="[&quot;Karnataka&quot;]" value="KA">Karnataka</option><option data-alternate-values="[&quot;Kerala&quot;]" value="KL">Kerala</option><option data-alternate-values="[&quot;Ladakh&quot;]" value="LA">Ladakh</option><option data-alternate-values="[&quot;Lakshadweep&quot;]" value="LD">Lakshadweep</option><option data-alternate-values="[&quot;Madhya Pradesh&quot;]" value="MP">Madhya Pradesh</option><option data-alternate-values="[&quot;Maharashtra&quot;]" value="MH">Maharashtra</option><option data-alternate-values="[&quot;Manipur&quot;]" value="MN">Manipur</option><option data-alternate-values="[&quot;Meghalaya&quot;]" value="ML">Meghalaya</option><option data-alternate-values="[&quot;Mizoram&quot;]" value="MZ">Mizoram</option><option data-alternate-values="[&quot;Nagaland&quot;]" value="NL">Nagaland</option><option data-alternate-values="[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;]" value="OR">Odisha</option><option data-alternate-values="[&quot;Puducherry&quot;]" value="PY">Puducherry</option><option data-alternate-values="[&quot;Punjab&quot;]" value="PB">Punjab</option><option data-alternate-values="[&quot;Rajasthan&quot;]" value="RJ">Rajasthan</option><option data-alternate-values="[&quot;Sikkim&quot;]" value="SK">Sikkim</option><option data-alternate-values="[&quot;Tamil Nadu&quot;]" value="TN">Tamil Nadu</option><option data-alternate-values="[&quot;Telangana&quot;]" value="TS">Telangana</option><option data-alternate-values="[&quot;Tripura&quot;]" value="TR">Tripura</option><option data-alternate-values="[&quot;Uttar Pradesh&quot;]" value="UP">Uttar Pradesh</option><option data-alternate-values="[&quot;Uttarakhand&quot;]" value="UK">Uttarakhand</option><option data-alternate-values="[&quot;West Bengal&quot;]" value="WB">West Bengal</option>
+            </select>
+            <input id="width25" type="text" placeholder="6 Digit pincode">
+            <input id="mobile" type="text" placeholder="Mobile Number">
+            <p id="alert"></p>
+        </div>
+        <div class="discount">
+            <a href="products.html">
+                <!-- <img alt="" class="logo__image logo__image--medium" src="./checkout/1676979039front page ss launch.webp" > -->
+            </a>
+        </div>
+        <button><span onclick="continueToShipping(event)" id="continueToShipping" class="btn__content"> SAVE AND CONTINUE </span></button>
+    </div>
+</body>
+
+</html>
+
+<script src="./JS/checkout.js">
+   
+</script>

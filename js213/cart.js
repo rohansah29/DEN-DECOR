@@ -209,7 +209,10 @@ function Display(data) {
 
 }
 
-
+let proceed=document.getElementById("proceed");
+proceed.addEventListener("click",()=>{
+  window.location.href="checkout.html";
+})
 
 
 //orderSummaryCartSection
@@ -347,3 +350,19 @@ caComp2cTd[9].innerHTML = '<i class="fas fa-rupee-sign"></i>' + Math.floor(order
 
 caComp2cTd[12].innerHTML = '-' + '&nbsp&nbsp<i class="fas fa-rupee-sign"></i>' + (orderSave)
         // }
+
+
+        let proceed1 = document.getElementById("proceed");
+
+  let proceedarr=[];
+
+  proceed1.addEventListener("click",()=>{
+    proceedarr.push(pricetotal);
+    proceedarr.push(shipping.innerText);
+    proceedarr.push(discount.innerText);
+    proceedarr.push(finalpay.innerText);
+    proceedarr.push(yousave.innerText);
+
+    localStorage.setItem("ordersummary",JSON.stringify(proceedarr));
+
+  })

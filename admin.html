@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Pannel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/c96c8abcd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./admin_product_pages/admin css/admin.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+
+    <header>
+      <label for="check">
+        <i class="fa fa-bars" id="side-nav_btn"></i>
+      </label>
+      <div class="left-side">
+        <h3 id="naam">Kumar Rohan</h3>
+        <h3>&nbsp;&nbsp;&nbsp;(Admin)</h3>
+      </div>
+      <a href="#" onclick="logout()"
+        ><i class="fa-solid fa-right-from-bracket fa-2xl"></i></a
+      >
+    </header>
+
+    <div class="side-nav">
+      <div class="logo">
+        <img src="./admin_product_pages/admin css/newlogo.png" alt="logo" class="image" />
+      </div>
+
+      <a href="./admin.html"
+        ><i class="fa fa-desktop"><span>Dashboard</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html"
+         onclick="sofas()"><i class="fa-solid fa-couch"><span>Sofas</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="living()"
+        ><i class="fa-solid fa-house"><span>Living Room</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="bedroom()"
+        ><i class="fa-solid fa-bed"><span>Bedroom</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="dining()"
+        ><i class="fa-solid fa-utensils"><span>Dining</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="storage()"
+        ><i class="fa-solid fa-box"><span>Storage</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="study()"
+        ><i class="fa-sharp fa-regular fa-pen-to-square"><span>Study</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="lighting()"
+        ><i class="fa-solid fa-lightbulb"><span>Lighting</span></i></a
+      >
+      <a href="./admin_product_pages/user.html"
+        ><i class="fa-solid fa-users"><span>Users</span></i></a
+      >
+      <a href="./admin_product_pages/sofas.html" onclick="orders()"
+        ><i class="fa-solid fa-truck-fast"><span>Orders</span></i></a
+      >
+    </div>
+
+    <div class="banner">
+        <!-- <h1>Hello Admin Welcome Back!!</h1> -->
+        <h1 style="display: none;" id="til"></h1>
+    </div>
+    
+    <div id="right-dash">
+        <div id="adminContainer">
+            <h1>ADMIN DASHBOARD <i id="userpage" title="User Data" class="fa-solid fa-users userData"></i></h1>
+            <div class="line"></div>
+            <div class="adminalldata">
+                <div title="Total Product">
+                    <h2>Total Product</h2>
+                    <h2 id="total-product">Loading..</h2>
+                </div>
+                <div title="Active User">
+                    <h2>Active User</h2>
+                    <h2 id="total-user">Loading..</h2>
+                </div>
+                <div title="Catagories">
+                    <h2>Catagories</h2>
+                    <h2>7</h2>
+                </div>
+            </div>
+            <div class="line"></div>
+
+
+
+
+            <div class="pro-cus">
+              <h2>All Admins</h2>
+             <div class="adflex">
+              <div>
+                <table style="width:100%">
+                  <!-- <tr>
+                      <th>Pic</th>
+                      <th>Name</th>
+                      <th>Contact</th>
+                  </tr> -->
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04K6GB334K-U04KUPGE5ML-1ada6a7847ed-512"/></td>
+                      <td>Kumar Rohan</td>
+                      <td class="cnt-info-td"><a href="tel:7992438393"><i class="fa fa-phone"></i></a><a href="mailto: 00rohansah00.kr@gmail.com"><i class="fa fa-envelope"></i></a><a href="mailto: 00rohansah00.kr@gmail.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04QXTJLERM-63e07b3c7c05-512"/></td>
+                      <td>Saurabh Bhatt</td>
+                      <td class="cnt-info-td"><a href="tel:9810295216"><i class="fa fa-phone"></i></a><a href="mailto: Saurabh7412@gmail.com"><i class="fa fa-envelope"></i></a><a href="mailto: Saurabh7412@gmail.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+              </table>
+              </div>
+              
+              <div>
+                <table style="width:100%">
+                  <!-- <tr>
+                      <th>Pic</th>
+                      <th>Name</th>
+                      <th>Contact</th>
+                  </tr> -->
+                  <tr>
+                      <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04RR8N3SEM-af3f8fedb1b0-512"/></td>
+                      <td>Abhishek Kumar Shaw</td>
+                      <td class="cnt-info-td"><a href="tel:9554324450"><i class="fa fa-phone"></i></a><a href="tel:9800121212"><i class="fa fa-envelope"></i></a><a href="mailto: abc@example.com"><i class="fa fa-map-marker"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img class="table-img" src="https://ca.slack-edge.com/T04RMV7PJAC-U04RETDSEH2-3c6308ebb48d-512"/></td>
+                    <td>Yogesh Sorde</td>
+                    <td class="cnt-info-td"><a href="tel:9665894488"><i class="fa fa-phone"></i></a><a href="tel:9800121212"><i class="fa fa-envelope"></i></a><a href="mailto: abc@example.com"><i class="fa fa-map-marker"></i></a></td>
+                </tr>
+              </table>
+              </div>
+             </div>
+          </div>
+
+
+          <div class="content-pro-par container">
+            <div class="pro-table">
+                <div class="recent-project">
+                    <div class="rec-pro-h">
+                        <h2>Recent Orders</h2>
+                    </div>
+                    <div class="see-all">
+                        <button>See all</button>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Sourav Jaiswal</td>
+                        <td>Sofas</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Gourab Talukdar</td>
+                        <td>Showcase</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Shivam Singh</td>
+                        <td>Single Bed</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Nikhil Kumar</td>
+                        <td>Bar Stool</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Shreya Sengupta</td>
+                        <td>Wall Art</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Manish Kumar</td>
+                        <td>TV Units</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Ritwik Das</td>
+                        <td>Curtains</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Shruti Sinha</td>
+                        <td>Runners</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Aniket Arora</td>
+                        <td>Pillows</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Sahil Singh</td>
+                        <td>Dining Table</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Rupam Raj</td>
+                        <td>Bean Bag</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Priya Sinha</td>
+                        <td>Bedroom Set</td>
+                        <td><span class="pending-span"></span> Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Rohan Paul</td>
+                        <td>Laptop Table</td>
+                        <td><span class="rev-span"></span>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Sandesh Ojha</td>
+                        <td>Bar Cabinates</td>
+                        <td><span class="progress-span"></span>In Progress</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+
+            
+  </body>
+  <script src="./admin script/admin.js"></script>
+  <script>
+    let totalProduct=0;
+async function getSofa(){
+    let res=await fetch("https://den-decor.onrender.com/sofas");
+    let data = await res.json();
+    console.log(data);
+    totalProduct+=+data.length;
+}
+getSofa();
+console.log(totalProduct);
+  </script>
+</html>
