@@ -78,7 +78,7 @@ async function fetchAndRender(pageNum) {
     pagination.innerText = "";
     let totalItems = res.headers.get("X-Total-Count");
 
-    let totalButtons = Math.ceil(totalItems / 2);
+    let totalButtons = Math.ceil(totalItems / 4);
     for (let i = 1; i <= totalButtons; i++) {
       pagination.append(button(i));
     }

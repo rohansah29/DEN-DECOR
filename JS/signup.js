@@ -15,7 +15,7 @@ regi.addEventListener("submit", (e) => {
     lastName.value == "" ||
     email.value == "" ||
     password.value == "" ||
-    number.value == ""
+    mobile.value == ""
   ) {
     alert("Please fill out all required fields ");
   } else {
